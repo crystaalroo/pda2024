@@ -7,20 +7,20 @@ import {
 const themeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: '#1B263B',
-      contrastText: '#FFFFFF'
+      main: '#6bc629',
+      contrastText: '#000000'
     },
     secondary: {
       main: '#0D1B2A'
     },
     background: {
-      default: '#1b263b',
-      paper: '#1b263b'
+      default: '#6bc629',
+      paper: '#6bc629'
     },
     text: {
       primary: '#FFFFFF',
-      secondary: '#BBBBBB',
-      disabled: '#BBBBBB'
+      secondary: '#08274e',
+      disabled: '#08274e'
     },
     divider: '#ffffff'
   },

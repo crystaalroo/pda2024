@@ -11,12 +11,12 @@ const imagesE = [
     url: '/assets/mapaiteso.jpg',
     title: 'Mapa ITESO',
     link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
-  },
-  {
-    url: '/assets/event2.JPG',
-    title: 'Fotos del evento',
-    link: 'https://www.flickr.com/photos/tcmxicpc/albums'
   }
+  // {
+  //   url: '/assets/event2.JPG',
+  //   title: 'Fotos del evento',
+  //   link: 'https://www.flickr.com/photos/tcmxicpc/albums'
+  // }
 ]
 
 const imagesI = [
@@ -31,17 +31,17 @@ const imagesI = [
     link: '/hotel'
   },
   {
-    url: '/assets/mapaiteso.jpg',
+    url: '/assets/prizes.jpg',
     title: 'Patrocinadores',
     link: '/sponsors'
   },
   {
-    url: '/assets/girls.jpg',
-    title: 'Pagos',
+    url: '/assets/winners.jpg',
+    title: 'Reglas de promoción',
     link: '/payment'
   },
   {
-    url: '/assets/contest.jpg',
+    url: '/assets/participants.jpg',
     title: 'Participantes',
     link: '/participants'
   }

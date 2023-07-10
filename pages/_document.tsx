@@ -6,7 +6,7 @@ export default function Document(): JSX.Element {
       <Head>
         <meta
           name="description"
-          content="Official site for Regional ICPC Mexico 2022"
+          content="Official site for Programadores de America 2024"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

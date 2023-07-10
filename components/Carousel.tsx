@@ -9,20 +9,20 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 
 const images = [
   {
-    label: 'REGIONAL ICPC MEXICO 2022',
-    imgPath: '/assets/iteso.jpeg'
+    label: 'PROGRAMADORES DE AMERICA 2024',
+    imgPath: '/assets/itesoi.jpg'
   },
   {
     label: '60 EQUIPOS',
-    imgPath: '/assets/icpc_balloons.jpeg'
+    imgPath: '/assets/teams.jpg'
   },
   {
     label: 'REUNIDOS EN UNA SEDE',
-    imgPath: '/assets/scoreboard.jpeg'
+    imgPath: '/assets/scoreboard.png'
   },
   {
     label: 'CONOCE GUADALAJARA',
-    imgPath: '/assets/guadalajara.jpg'
+    imgPath: '/assets/gdl.webp'
   }
 ]
 

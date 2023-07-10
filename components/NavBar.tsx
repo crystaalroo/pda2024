@@ -84,14 +84,14 @@ const NavBar: React.FC = () => {
               <Link key={'card'} href={'/'}>
                 <Card
                   sx={{
-                    width: '180px',
+                    width: '200px',
                     height: '240px',
-                    border: '2px',
-                    borderColor: 'white',
+                    border: '5px',
+                    borderColor: 'text.secondary',
                     borderLeftStyle: 'solid',
                     borderRightStyle: 'solid',
                     borderBottomStyle: 'solid',
-                    bgcolor: 'secondary.main'
+                    bgcolor: 'white'
                   }}
                 >
                   <CardActionArea>
@@ -102,14 +102,14 @@ const NavBar: React.FC = () => {
                       }}
                     >
                       <Typography
-                        fontSize={'19px'}
+                        fontSize={'18px'}
                         gutterBottom
-                        variant="body1"
+                        variant="body2"
                         component="div"
                         align="left"
-                        color={'white'}
+                        color={'text.secondary'}
                       >
-                        REGIONAL ICPC MEXICO 2022
+                        PROGRAMADORES DE AMERICA 2024
                       </Typography>
                     </CardContent>
                     <Box
@@ -132,7 +132,7 @@ const NavBar: React.FC = () => {
                       >
                         <CardMedia
                           component="img"
-                          image="/assets/icpcmx.png"
+                          image="/assets/logopda.jpg"
                           alt="icpcmx"
                           sx={{
                             width: '100%'
