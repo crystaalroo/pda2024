@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         borderWidth: '2px',
         borderColor: 'divider',
         borderTopStyle: 'solid',
-        backgroundColor: 'secondary.main',
+        backgroundColor: 'background.default',
         position: 'static',
         display: 'flex',
         justifyContent: 'center'

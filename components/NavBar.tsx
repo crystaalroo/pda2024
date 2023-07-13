@@ -107,7 +107,7 @@ const NavBar: React.FC = () => {
                         variant="body2"
                         component="div"
                         align="left"
-                        color={'text.secondary'}
+                        color={'primary.contrastText'}
                       >
                         PROGRAMADORES DE AMERICA 2024
                       </Typography>
@@ -163,7 +163,7 @@ const NavBar: React.FC = () => {
               >
                 <CardMedia
                   component="img"
-                  image="/assets/icpcmx.png"
+                  image="/assets/logopda.jpg"
                   alt="icpcmx"
                   sx={{
                     width: '140px'

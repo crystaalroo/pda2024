@@ -13,11 +13,21 @@ import path from 'path'
 // ********************************************************************************
 
 interface Props {
+  agenda14: RowData[]
+  agenda15: RowData[]
+  agenda16: RowData[]
   agenda17: RowData[]
   agenda18: RowData[]
-  agenda17c: RowData[]
+  agenda19: RowData[]
 }
-const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
+const Agenda: NextPage<Props> = ({
+  agenda14,
+  agenda15,
+  agenda16,
+  agenda17,
+  agenda18,
+  agenda19
+}) => {
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />
@@ -32,7 +42,70 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
             align="center"
             color={'primary.contrastText'}
           >
-            Viernes: 17 de Marzo de 2023
+            14 de marzo
+          </Typography>
+        </BoardCard>
+        <BoardCard
+          barSide="none"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
+          <AgendaTable Rows={agenda14} />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="h4"
+            component="div"
+            align="center"
+            color={'primary.contrastText'}
+          >
+            15 de marzo
+          </Typography>
+        </BoardCard>
+        <BoardCard
+          barSide="none"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
+          <AgendaTable Rows={agenda15} />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="h4"
+            component="div"
+            align="center"
+            color={'primary.contrastText'}
+          >
+            16 de marzo
+          </Typography>
+        </BoardCard>
+        <BoardCard
+          barSide="none"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
+          <AgendaTable Rows={agenda16} />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="h4"
+            component="div"
+            align="center"
+            color={'primary.contrastText'}
+          >
+            17 de marzo
           </Typography>
         </BoardCard>
         <BoardCard
@@ -53,28 +126,7 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
             align="center"
             color={'primary.contrastText'}
           >
-            Charlas: 17 de Marzo de 2023
-          </Typography>
-        </BoardCard>
-        <BoardCard
-          barSide="none"
-          sx={{
-            width: '100%',
-            overflow: 'scroll',
-            alignItems: 'normal',
-            justifyContent: 'normal'
-          }}
-        >
-          <AgendaTable Rows={agenda17c} />
-        </BoardCard>
-        <BoardCard barSide="none" sx={{ padding: 0 }}>
-          <Typography
-            variant="h4"
-            component="div"
-            align="center"
-            color={'primary.contrastText'}
-          >
-            Sabado: 18 de Marzo de 2023
+            18 de marzo
           </Typography>
         </BoardCard>
         <BoardCard
@@ -87,6 +139,27 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
           }}
         >
           <AgendaTable Rows={agenda18} />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="h4"
+            component="div"
+            align="center"
+            color={'primary.contrastText'}
+          >
+            19 de marzo
+          </Typography>
+        </BoardCard>
+        <BoardCard
+          barSide="none"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
+          <AgendaTable Rows={agenda19} />
         </BoardCard>
       </MainBoard>
       <Footer />
@@ -122,9 +195,36 @@ async function parseCSV(fileName: string): Promise<RowData[]> {
   })
 }
 export const getStaticProps: GetStaticProps<Props> = async () => {
+  let rows14: RowData[] = []
+  let rows15: RowData[] = []
+  let rows16: RowData[] = []
   let rows17: RowData[] = []
   let rows18: RowData[] = []
-  let rows17c: RowData[] = []
+  let rows19: RowData[] = []
+  await parseCSV('./public/agenda14.csv')
+    .then((parsedRows: RowData[]) => {
+      rows14 = parsedRows
+      // console.log(rows17)
+    })
+    .catch((error: Error) => {
+      console.error(error)
+    })
+  await parseCSV('./public/agenda15.csv')
+    .then((parsedRows: RowData[]) => {
+      rows15 = parsedRows
+      // console.log(rows17)
+    })
+    .catch((error: Error) => {
+      console.error(error)
+    })
+  await parseCSV('./public/agenda16.csv')
+    .then((parsedRows: RowData[]) => {
+      rows16 = parsedRows
+      // console.log(rows17)
+    })
+    .catch((error: Error) => {
+      console.error(error)
+    })
   await parseCSV('./public/agenda17.csv')
     .then((parsedRows: RowData[]) => {
       rows17 = parsedRows
@@ -133,23 +233,32 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     .catch((error: Error) => {
       console.error(error)
     })
-  await parseCSV('./public/agenda17c.csv')
+  await parseCSV('./public/agenda18.csv')
     .then((parsedRows: RowData[]) => {
-      rows17c = parsedRows
+      rows18 = parsedRows
       // console.log(rows17)
     })
     .catch((error: Error) => {
       console.error(error)
     })
-  await parseCSV('./public/agenda18.csv')
+  await parseCSV('./public/agenda19.csv')
     .then((parsedRows: RowData[]) => {
-      rows18 = parsedRows
-      // console.log(rows18)
+      rows19 = parsedRows
+      // console.log(rows17)
     })
     .catch((error: Error) => {
       console.error(error)
     })
-  return { props: { agenda17: rows17, agenda18: rows18, agenda17c: rows17c } }
+  return {
+    props: {
+      agenda14: rows14,
+      agenda15: rows15,
+      agenda16: rows16,
+      agenda17: rows17,
+      agenda18: rows18,
+      agenda19: rows19
+    }
+  }
 }
 
 export default Agenda

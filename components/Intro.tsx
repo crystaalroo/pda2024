@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
           width: '100%'
         }}
       >
-        ACERCA DEL REGIONAL ICPC MEXICO 2022
+        ACERCA DE PROGRAMADORES DE AMERICA 2024
       </Typography>
       <Box
         sx={{
@@ -47,14 +47,19 @@ const Intro: React.FC = () => {
           }}
         />
         <Typography variant="body1" component="div" color={'text.secondary'}>
-          La ICPC organiza el concurso de programación algorítmica para
-          universitarios, en equipos de tres, en representación de su
-          universidad, trabajan para resolver la mayoría de los problemas del
-          mundo real, fomentando la colaboración, la creatividad, la innovación
-          y la capacidad de desempeñarse bajo presión. A través del
-          entrenamiento y la competencia, los equipos se desafían entre sí para
-          elevar el nivel de lo posible. Sencillamente, es el concurso de
-          programación más antiguo, grande y prestigioso del mundo.
+          Los Concursos Regionales se agrupan en ocho Campeonatos: <br></br>“The
+          ICPC Africa & Arab Championship”, “The ICPC Asia East Championship”,
+          “The ICPC Asia Pacific Championship”, “The ICPC Asia West
+          Championship”, “The ICPC European Championship”, “The ICPC Latin
+          America Championship”, “The ICPC Northern Eurasia Championship” y “The
+          ICPC North America Championship”. Campeonatos adicionales pueden ser
+          definidos por el Comité Ejecutivo del ICPC. <br></br>Las reglas de
+          composición y requisitos del equipo para una competencia de Campeonato
+          deben ser las mismas que para las Finales Mundiales. Una competencia
+          de Campeonato debe llevarse a cabo a más tardar tres meses antes de
+          las Finales Mundiales. En el cronograma regional 2023/24 el campeonato
+          “The ICPC Latin America Championship” se denominará Programadores de
+          América y tendrán lugar en Guadalajara, México del 14 al 19 de marzo.
         </Typography>
       </Box>
     </Box>

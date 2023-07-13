@@ -25,26 +25,26 @@ const imagesI = [
     title: 'Agenda',
     link: '/agenda'
   },
-  {
-    url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
-    title: 'Hospedaje',
-    link: '/hotel'
-  },
+  // {
+  //   url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
+  //   title: 'Hospedaje',
+  //   link: '/hotel'
+  // },
   {
     url: '/assets/prizes.jpg',
     title: 'Patrocinadores',
     link: '/sponsors'
-  },
-  {
-    url: '/assets/winners.jpg',
-    title: 'Reglas de promoción',
-    link: '/payment'
-  },
-  {
-    url: '/assets/participants.jpg',
-    title: 'Participantes',
-    link: '/participants'
   }
+  // {
+  //   url: '/assets/winners.jpg',
+  //   title: 'Reglas de promoción',
+  //   link: '/payment'
+  // },
+  // {
+  //   url: '/assets/participants.jpg',
+  //   title: 'Participantes',
+  //   link: '/participants'
+  // }
 ]
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

@@ -13,7 +13,7 @@ const images = [
     imgPath: '/assets/itesoi.jpg'
   },
   {
-    label: '60 EQUIPOS',
+    label: '40 EQUIPOS OFICIALES',
     imgPath: '/assets/teams.jpg'
   },
   {

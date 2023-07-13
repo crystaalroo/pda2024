@@ -21,15 +21,13 @@ const titles = [
 ]
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: '#2d3142',
     color: theme.palette.common.white
   }
 }))
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover
-  },
+  backgroundColor: '#2d3142',
   // hide last border
   '&:last-child td, &:last-child th': {
     border: 0
