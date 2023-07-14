@@ -5,7 +5,6 @@ import TopBanner from '../components/TopBanner'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import BoardCard from '../components/BoardCard'
-import Benefits from '../components/Benefits'
 import Diamond from '../components/Diamond'
 import Bronce from '../components/Bronce'
 import { Typography } from '@mui/material'
@@ -24,7 +23,7 @@ const Sponsor: NextPage = () => {
             variant="h4"
             component="div"
             align="center"
-            color={'primary.contrastText'}
+            color={'text.secondary'}
             sx={{
               margin: 'auto 20px 20px 20px',
               display: 'block',
@@ -35,83 +34,99 @@ const Sponsor: NextPage = () => {
           </Typography>
         </BoardCard>
         <BoardCard barSide="none">
-          <Diamond
+          <Bronce
             name="Diamante"
-            per="100%"
-            image="assets/diamondhh.png"
+            per1="100%"
+            per2="100%"
+            image1="assets/huaweid.png"
+            link1="https://www.huawei.com/mx/"
+            image2="/assets/jetbrains.png"
+            link2="https://www.jetbrains.com/"
+            benefits={[
+              'Patrocinador principal de la competencia',
+              'Presencia en el escenario para anuncios de premios y fotografía',
+              'Orador en las ceremonias de apertura y clausura',
+              'Video en ceremonia de inauguración',
+              'Video en ceremonia de clausura',
+              'Patrocinador de una de las cenas',
+              'Stand de patrocinador durante momentos del evento',
+              'Stand en el registro',
+              'Presencia diaria en el sitio',
+              'Charla de patrocinador: 30 minutos',
+              '6 accesos para ejecutivos y staff'
+            ]}
+          />
+        </BoardCard>
+        <BoardCard barSide="none">
+          <Diamond
+            name="Platino"
+            per="50%"
+            image="assets/logopda.jpg"
             link="https://www.huawei.com/mx/"
             benefits={[
-              'Sitio web regional presencia de logo en encabezado y cuando corresponda, enlace activo al sitio web del patrocinador',
-              'Logotipo en portada del conjunto de problemas',
-              'Logotipos en pancartas de eventos',
-              'Participación en ceremonia de inauguración, clausura y entrega de premios',
-              'Videos promocionales de patrocinadores durante la apertura y el cierre',
-              'Presentación de 30 minutos.',
-              'Representantes del patrocinador en el escenario para la ceremonia de clausura, foto con los ganadores',
-              'Hasta 2 mensajes en redes sociales aprobados por el patrocinador, incluidas oportunidades de trabajo y pasantías',
-              'Mesa preferencial en espacio de patrocinador'
+              'Charla técnica con los participantes: 20 minutos',
+              'Presencia en el escenario para anuncios de premios y fotografía',
+              'Video en ceremonia de inauguración',
+              'Patrocinador de una de las cenas',
+              'Stand de patrocinador durante momentos del evento',
+              'Stand en el registro',
+              'Presencia diaria en el sitio',
+              '5 accesos para ejecutivos y staff'
             ]}
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Bronce
+          <Diamond
             name="Oro"
-            per="90%"
+            per="45%"
+            image="assets/logopda.jpg"
+            link="https://www.huawei.com/mx/"
             benefits={[
-              'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
-              'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA EN VIDEOS EN CEREMONIAS DE APERTURA Y CIERRE',
-              'PLAYERA OFICIAL DEL EVENTO',
-              'PARTICIPACIÓN EN CEREMONIA DE PREMIACIÓN, CON ENTREGA DE PREMIO AL SEGUNDO LUGAR DEL CONCURSO REGIONAL',
-              'CONFERENCIA DE PATROCINADOR. TIEMPO: 30 MIN'
+              'Charla técnica con los participantes: 10 minutos',
+              'Video en ceremonia de inauguración',
+              'Stand de patrocinador durante momentos del evento',
+              'Presencia diaria en el sitio',
+              '4 accesos para ejecutivos y staff'
             ]}
-            stand={[
-              'TAMAÑO DE STAND: 3 M X 3 M. ESTRUCTURA NO INCLUIDA',
-              'SEÑALIZACIÓN DEL ÁREA DE EVENTOS Y ROLL-UPS DE EVENTOS O MURO DE PRENSA',
-              'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
-            ]}
-            staff={['3 ACCESOS PARA STAFF', '2 ACCESOS PARA EJECUTIVOS']}
-            image1="/assets/cignuzb.png"
-            link1="https://cignuz.com/"
-            image2="/assets/oracle.png"
-            link2="https://www.oracle.com/mx/"
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Bronce
+          <Diamond
+            name="Plata"
+            per="40%"
+            image="assets/logopda.jpg"
+            link="https://www.huawei.com/mx/"
+            benefits={[
+              'Charla técnica con los participantes de la competencia: 5 minutos',
+              'Reconocimiento como patrocinador del almuerzo',
+              'Stand de patrocinador durante momentos del evento',
+              '3 accesos para ejecutivos y staff'
+            ]}
+          />
+        </BoardCard>
+        <BoardCard barSide="none">
+          <Diamond
             name="Bronce"
-            per="70%"
+            per="35%"
+            image="assets/logopda.jpg"
+            link="https://www.huawei.com/mx/"
             benefits={[
-              'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
-              'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA EN VIDEOS EN CEREMONIAS DE APERTURA Y CIERRE',
-              'PLAYERA OFICIAL DEL EVENTO'
+              'Reconocimiento como patrocinador del desayuno cada día',
+              'Stand de patrocinador durante momentos del evento',
+              '2 accesos para ejecutivos y staff'
             ]}
-            stand={[
-              'TAMAÑO DE STAND: 1 M X 1 M. ESTRUCTURA NO INCLUIDA',
-              'SEÑALIZACIÓN DEL ÁREA DE EVENTOS Y ROLL-UPS DE EVENTOS O MURO DE PRENSA',
-              'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
-            ]}
-            staff={['1 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
-            image1="/assets/tecM.png"
-            link1="https://www.digitalonus.com/"
-            image2="/assets/GDwhite.png"
-            link2="https://careers.griddynamics.com"
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Bronce
+          <Diamond
             name="Aliados"
-            per="60%"
-            image1="/assets/edu.png"
-            link1="https://www.solucionesenedu.com"
-            image2="/assets/omegab.png"
-            link2="https://omegaup.com/"
+            per="30%"
+            image="assets/logopda.jpg"
+            link="https://www.huawei.com/mx/"
             benefits={[
-              'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
-              'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA'
+              'Oportunidad de interactuar con participantes',
+              '1 acceso para ejecutivos y staff'
             ]}
-            staff={['1 ACCESOS PARA STAFF']}
           />
         </BoardCard>
       </MainBoard>

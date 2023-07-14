@@ -26,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  color: theme.palette.text.secondary
+  color: theme.palette.text.primary
 }))
 const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
   return (
@@ -43,7 +43,7 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
         variant="h4"
         component="div"
         align="center"
-        color={'primary.contrastText'}
+        color={'text.secondary'}
         sx={{
           display: 'block',
           width: '50%'
@@ -60,27 +60,27 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
           justifyContent: 'center'
         }}
       >
-        <ExternalLink
+        {/* <ExternalLink
           key="cignuz"
           href={link}
           target={'blank'}
           sx={{ width: '100%' }}
-        >
-          <Box
-            component="img"
-            sx={{
-              width: per,
-              height: '450px',
-              padding: { sm: '0 10%', xs: '0 15%' },
-              objectFit: 'contain',
-              display: 'flex'
-            }}
-            src={image}
-            alt="icpcmx"
-          />
-        </ExternalLink>
+        > */}
+        <Box
+          component="img"
+          sx={{
+            width: per,
+            height: '450px',
+            padding: { sm: '0 10%', xs: '0 15%' },
+            objectFit: 'contain',
+            display: 'flex'
+          }}
+          src={image}
+          alt="icpcmx"
+        />
+        {/* </ExternalLink> */}
       </Box>
-      <Accordion sx={{ backgroundColor: 'secondary.main', width: '100%' }}>
+      <Accordion sx={{ backgroundColor: '#2d3142', width: '100%' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ fill: 'white' }} />}
           aria-controls="panel1a-content"

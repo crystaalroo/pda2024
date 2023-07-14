@@ -16,7 +16,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 export interface Props {
   name: string
-  per: string
+  per1: string
+  per2: string
   benefits?: string[]
   stand?: string[]
   staff?: string[]
@@ -30,11 +31,12 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  color: theme.palette.text.secondary
+  color: theme.palette.text.primary
 }))
 const Bronce: React.FC<Props> = ({
   name,
-  per,
+  per1,
+  per2,
   benefits,
   stand,
   staff,
@@ -57,7 +59,7 @@ const Bronce: React.FC<Props> = ({
         variant="h4"
         component="div"
         align="center"
-        color={'primary.contrastText'}
+        color={'text.secondary'}
         sx={{
           display: 'block',
           width: '50%'
@@ -72,20 +74,20 @@ const Bronce: React.FC<Props> = ({
           width: { sm: '50%', xs: '100%' },
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'column'
+          flexDirection: 'row'
         }}
       >
         <ExternalLink
           key="tecm"
           href={link1}
           target={'blank'}
-          sx={{ width: '100%' }}
+          sx={{ width: '50%' }}
         >
           <Box
             component="img"
             sx={{
-              width: per,
-              height: '150px',
+              width: per1,
+              height: '300px',
               padding: { sm: '0 15%', xs: '0 20%' },
               objectFit: 'contain',
               display: 'flex'
@@ -99,13 +101,13 @@ const Bronce: React.FC<Props> = ({
           key="grid"
           href={link2}
           target={'blank'}
-          sx={{ width: '100%' }}
+          sx={{ width: '50%' }}
         >
           <Box
             component="img"
             sx={{
-              width: per,
-              height: '150px',
+              width: per2,
+              height: '300px',
               padding: { sm: '0 15%', xs: '0 20%' },
               objectFit: 'contain',
               display: 'flex'
@@ -115,12 +117,7 @@ const Bronce: React.FC<Props> = ({
           />
         </ExternalLink>
       </Box>
-      <Accordion
-        sx={{
-          backgroundColor: 'secondary.main',
-          width: '100%'
-        }}
-      >
+      <Accordion sx={{ backgroundColor: '#2d3142', width: '100%' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ fill: 'white' }} />}
           aria-controls="panel1a-content"
@@ -130,7 +127,7 @@ const Bronce: React.FC<Props> = ({
         </AccordionSummary>
         <AccordionDetails>
           <Stack
-            direction={{ xs: 'column', sm: 'row' }}
+            direction="row"
             spacing={2}
             sx={{
               backgroundColor: 'inherit'
@@ -139,32 +136,6 @@ const Bronce: React.FC<Props> = ({
             <Item>
               <List sx={{ listStyleType: 'disc' }}>
                 {benefits?.map(ben => {
-                  return (
-                    <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
-                    </ListItem>
-                  )
-                })}
-              </List>
-            </Item>
-            <Item>
-              {stand !== undefined && (
-                <Box>
-                  <Typography>STAND EN ESPACIO DE EXHIBICIÓN:</Typography>
-                  <List sx={{ listStyleType: 'disc' }}>
-                    {stand?.map(ben => {
-                      return (
-                        <ListItem sx={{ display: 'list-item' }} key="ite">
-                          {ben}
-                        </ListItem>
-                      )
-                    })}
-                  </List>
-                </Box>
-              )}
-              <Typography>ACCESOS INCLUIDOS:</Typography>
-              <List sx={{ listStyleType: 'disc' }}>
-                {staff?.map(ben => {
                   return (
                     <ListItem sx={{ display: 'list-item' }} key="ite">
                       {ben}
