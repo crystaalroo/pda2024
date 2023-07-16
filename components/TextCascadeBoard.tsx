@@ -10,7 +10,7 @@ import {
 } from '@mui/material'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
 import BoardCard from './BoardCard'
-import Link from 'next/link'
+import Link from './Link'
 
 interface Props {
   children: React.ReactNode
@@ -72,7 +72,7 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
           <List>
             {props.menu.map(section => (
               <ListItem key={section} sx={{ paddingLeft: 0 }}>
-                <Link href={`#${section}`}>
+                <Link href={`#${section}`} skipLocaleHandling={false}>
                   <ListItemButton sx={{ padding: 0 }}>
                     <ListItemIcon>
                       {/* <CircleIcon /> */}

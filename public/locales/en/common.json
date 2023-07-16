@@ -1,0 +1,125 @@
+{
+  "pda2024": "PROGRAMMERS OF AMERICA 2024",
+  "carousel": {
+    "equipos": "40 OFFICIAL TEAMS",
+    "sede": "GATHERED IN ONE LOCATION",
+    "gdl": "DISCOVER GUADALAJARA"
+  },
+  "intro": {
+    "title": "ABOUT PROGRAMMERS OF AMERICA 2024",
+    "description": "The regional contests are partitioned into eight championships; the ICPC Africa & Arab Championship, the ICPC Asia East Championship, the ICPC Asia Pacific Championship, the ICPC Asia West Championship, the ICPC European Championship, the ICPC Latin America Championship, the ICPC Northern Eurasia Championship, and the ICPC North America Championship.  Additional Championships may be defined by the ICPC Executive Committee.\nThe highest level Regional Contest may be a Championship Contest. Team composition and requirements rules for a Championship contest are to be the same as for the World Finals. A Championship contest should be held no later than three months prior to the World Finals.\nNote: The 2023/24 Regional Schedule may extend into the first quarter of 2024."
+  },
+  "navbar": {
+    "host": "host",
+    "contact": "contact"
+  },
+  "host": {
+    "title": "HOST AND ORGANIZERS"
+  },
+  "icpc": {
+    "title": "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
+    "description": "ICPC organizes the algorithmic programming contest for university students, in teams of three, representing their university. They work to solve real-world problems, promoting collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to push the boundaries of what is possible. Simply put, it is the oldest, largest, and most prestigious programming contest in the world."
+  },
+  "statistics": {
+    "map": "ITESO Map",
+    "schedule": "Schedule",
+    "sponsors": "Sponsors"
+  },
+  "schedule": {
+    "dates": {
+      "march14": "March 14th",
+      "march15": "March 15th",
+      "march16": "March 16th",
+      "march17": "March 17th",
+      "march18": "March 18th",
+      "march19": "March 19th"
+    },
+    "tables": {
+      "titles": {
+        "localstart": "Start (Local)",
+        "localend": "End (Local)",
+        "utcstart": "Start (UTC)",
+        "utcend": "End (UTC)",
+        "activity": "Activity",
+        "place": "Place",
+        "attendees": "Attendees",
+        "sponsoredby": "Sponsored by"
+      }
+    },
+    "activities": {
+      "allAttendeesArrival": "Arrival of all attendees",
+      "checkIn": "Check-In",
+      "pdaCheckIn": "PDA 2024 Attendee Registration",
+      "welcomeDinner": "Welcome Dinner",
+      "breakfast": "Breakfast",
+      "excursion": "Excursion",
+      "lunch": "Lunch",
+      "sponsorsActivities": "Activities with sponsors",
+      "dinner": "Dinner",
+      "openingCeremony": "Opening Ceremony",
+      "practiceContest": "Practice Contest",
+      "pda2024": "Programmers of America 2024",
+      "closingCeremony": "Closing Ceremony",
+      "checkOut": "Check-Out",
+      "leadersSymposium": "ICPC LATAM Leaders Symposium",
+      "checkOutLeaders": "ICPC LATAM Leaders Check-Out"
+    },
+    "places": {
+      "airport": "Guadalajara International Airport",
+      "hotels": "Venue Hotel(s)",
+      "pending": "Pending",
+      "pedroArrupeAuditorium": "Pedro Arrupe Auditorium, ITESO",
+      "pedroArrupeAuditoriumEsplanade": "Pedro Arrupe Auditorium Esplanade, ITESO",
+      "WNorthGardenITESO": "W North Garden, ITESO",
+      "MAuditorium": "M Auditorium, ITESO",
+      "iteso": "ITESO",
+      "thePines": "The Pines, ITESO"
+    },
+    "attendees": {
+      "all": "All"
+    }
+  },
+  "sponsors": {
+    "levels": {
+      "diamond": "Diamond",
+      "platinum": "Platinum",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "allies": "Allies"
+    },
+    "benefits": {
+      "mainCompetitionSponsor": "Main Competition Sponsor",
+      "stagePresenceForAwardsAnnouncementsAndPhotography": "Stage Presence for Awards Announcements and Photography",
+      "speakerAtOpeningAndClosingCeremonies": "Speaker at Opening and Closing Ceremonies",
+      "videoAtOpeningCeremony": "Video at Opening Ceremony",
+      "videoAtClosingCeremony": "Video at Closing Ceremony",
+      "sponsorOfOneDinner": "Sponsor of One Dinner",
+      "sponsorBoothDuringEventMoments": "Sponsor Booth During Event Moments",
+      "boothAtRegistration": "Booth at Registration",
+      "dailyPresenceAtTheVenue": "Daily Presence at the Venue",
+      "sponsorTalk30Minutes": "Sponsor Talk: 30 minutes",
+      "6AccessesForExecutivesAndStaff": "6 Accesses for Executives and Staff",
+      "technicalTalkWithParticipants20Minutes": "Technical Talk with Participants: 20 minutes",
+      "5AccessesForExecutivesAndStaff": "5 Accesses for Executives and Staff",
+      "technicalTalkWithParticipants10Minutes": "Technical Talk with Participants: 10 minutes",
+      "4AccessesForExecutivesAndStaff": "4 Accesses for Executives and Staff",
+      "technicalTalkWithParticipants5Minutes": "Technical Talk with Participants: 5 minutes",
+      "sponsorRecognitionAtLunch": "Sponsor Recognition at Lunch",
+      "3AccessesForExecutivesAndStaff": "3 Accesses for Executives and Staff",
+      "sponsorRecognitionAtBreakfastEachDay": "Sponsor Recognition at Breakfast Each Day",
+      "2AccessesForExecutivesAndStaff": "2 Accesses for Executives and Staff",
+      "OpportunityToInteractWithParticipants": "Opportunity to Interact with Participants",
+      "1AccessForExecutivesAndStaff": "1 Access for Executives and Staff"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "icpcRole": "ICPC Mexico Director",
+    "name": "Mtro. Carlos Alberto Fernández Guillot",
+    "email1": "guillot@icpcmexico.org",
+    "email2": "carlosf@iteso.mx",
+    "discord": "Join our Discord",
+    "facebook": "Follow us on Facebook"
+  }
+}

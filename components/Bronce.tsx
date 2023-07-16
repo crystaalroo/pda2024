@@ -13,6 +13,7 @@ import {
   Link as ExternalLink
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { useTranslation } from 'react-i18next'
 
 export interface Props {
   name: string
@@ -45,6 +46,7 @@ const Bronce: React.FC<Props> = ({
   link2,
   image2
 }) => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -138,7 +140,7 @@ const Bronce: React.FC<Props> = ({
                 {benefits?.map(ben => {
                   return (
                     <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
+                      {t(ben)}
                     </ListItem>
                   )
                 })}

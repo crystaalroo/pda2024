@@ -1,4 +1,4 @@
-﻿-,-,-,-,Desayuno.,Hotel(es) Sede,Todos,-
--,-,-,-,Regreso de los EQUIPOS.,Hotel (es) Sede. Aeropuerto de Guadalajara., Todos, -
--,-,-,-,Simposio de líderes ICPC LATAM.,Pendiente, Todos, -
--,-,-,-,Cena.,Pendiente, Todos, -
+﻿-,-,-,-,schedule.activities.breakfast,schedule.places.hotels,schedule.attendees.all,-
+-,-,-,-,schedule.activities.checkOut,schedule.places.hotels,schedule.attendees.all, -
+-,-,-,-,schedule.activities.leadersSymposium,schedule.places.pending,schedule.attendees.all, -
+-,-,-,-,schedule.activities.dinner,schedule.places.pending,schedule.attendees.all, -

@@ -4,12 +4,13 @@ import Box from '@mui/material/Box'
 import ButtonBase from '@mui/material/ButtonBase'
 import Typography from '@mui/material/Typography'
 import { Link as ExternalLink } from '@mui/material'
-import Link from 'next/link'
+import Link from './Link'
+import { useTranslation } from 'react-i18next'
 
 const imagesE = [
   {
     url: '/assets/mapaiteso.jpg',
-    title: 'Mapa ITESO',
+    i18n: 'statistics.map',
     link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
   }
   // {
@@ -22,7 +23,7 @@ const imagesE = [
 const imagesI = [
   {
     url: '/assets/agendaicpc.jpg',
-    title: 'Agenda',
+    i18n: 'statistics.schedule',
     link: '/agenda'
   },
   // {
@@ -32,7 +33,7 @@ const imagesI = [
   // },
   {
     url: '/assets/prizes.jpg',
-    title: 'Patrocinadores',
+    i18n: 'statistics.sponsors',
     link: '/sponsors'
   }
   // {
@@ -127,6 +128,7 @@ const ImageMarked = styled('span')(({ theme }) => ({
 }))
 
 const Statistics: React.FC = () => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -136,10 +138,10 @@ const Statistics: React.FC = () => {
       }}
     >
       {imagesI.map(image => (
-        <Link key={image.title} href={image.link}>
+        <Link key={image.i18n} href={image.link} skipLocaleHandling={false}>
           <ImageButton
             focusRipple
-            key={image.title}
+            key={image.i18n}
             style={{
               width: '48%',
               margin: '1%'
@@ -160,7 +162,7 @@ const Statistics: React.FC = () => {
                   pb: theme => `calc(${theme.spacing(1)} + 6px)`
                 }}
               >
-                {image.title}
+                {t(image.i18n)}
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>
@@ -179,7 +181,7 @@ const Statistics: React.FC = () => {
         >
           <ImageButton
             focusRipple
-            key={image.title}
+            key={image.i18n}
             style={{
               width: '100%'
             }}
@@ -199,7 +201,7 @@ const Statistics: React.FC = () => {
                   pb: theme => `calc(${theme.spacing(1)} + 6px)`
                 }}
               >
-                {image.title}
+                {t(image.i18n)}
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>

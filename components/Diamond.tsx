@@ -13,6 +13,7 @@ import {
   Link as ExternalLink
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { useTranslation } from 'react-i18next'
 
 export interface Props {
   name: string
@@ -29,6 +30,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.primary
 }))
 const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -101,7 +103,7 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
                 {benefits?.map(ben => {
                   return (
                     <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
+                      {t(ben)}
                     </ListItem>
                   )
                 })}

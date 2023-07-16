@@ -1,4 +1,4 @@
-﻿-,-,-,-,Llegada de todos los asistentes.,Aeropuerto de Guadalajara.,Todos.,-
--,-,-,-,Check-in.,Hotel(es) Sede,Todos,-
--,-,-,-,Registro de Asistentes PdA 2024,Pendiente, Todos, -
--,-,-,-,Cena de bienvenida,Pendiente, Todos, -
+﻿-,-,-,-,schedule.activities.allAttendeesArrival,schedule.places.airport,schedule.attendees.all,-
+-,-,-,-,schedule.activities.checkIn,schedule.places.hotels,schedule.attendees.all,-
+-,-,-,-,schedule.activities.pdaCheckIn,schedule.places.pending,schedule.attendees.all,-
+-,-,-,-,schedule.activities.welcomeDinner,schedule.places.pending,schedule.attendees.all,-

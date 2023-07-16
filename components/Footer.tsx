@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import { Link as ExternalLink } from '@mui/material'
-import Link from 'next/link'
+import Link from './Link'
 
 const Footer: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         borderWidth: '2px',
         borderColor: 'divider',
         borderTopStyle: 'solid',
-        backgroundColor: 'background.default',
+        backgroundColor: 'primary.main',
         position: 'static',
         display: 'flex',
         justifyContent: 'center'
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           alignItems: 'center'
         }}
       >
-        <Link key="homepage" href="/">
+        <Link key="homepage" href="/" skipLocaleHandling={false}>
           <Box
             component="img"
             sx={{

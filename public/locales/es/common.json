@@ -1,0 +1,125 @@
+{
+  "pda2024": "PROGRAMADORES DE AMERICA 2024",
+  "carousel": {
+    "equipos": "40 EQUIPOS OFICIALES",
+    "sede": "REUNIDOS EN UNA SEDE",
+    "gdl": "CONOCE GUADALAJARA"
+  },
+  "intro": {
+    "title": "ACERCA DE PROGRAMADORES DE AMÉRICA 2024",
+    "description": "Los Concursos Regionales se agrupan en ocho Campeonatos: “The ICPC Africa & Arab Championship”, “The ICPC Asia East Championship”, “The ICPC Asia Pacific Championship”, “The ICPC Asia West Championship”, “The ICPC European Championship”, “The ICPC Latin America Championship”, “The ICPC Northern Eurasia Championship” y “The ICPC North America Championship”. Campeonatos adicionales pueden ser definidos por el Comité Ejecutivo del ICPC.\nLas reglas de composición y requisitos del equipo para una competencia de Campeonato deben ser las mismas que para las Finales Mundiales. Una competencia de Campeonato debe llevarse a cabo a más tardar tres meses antes de las Finales Mundiales.\nEn el cronograma regional 2023/24 el campeonato “The ICPC Latin America Championship” se denominará Programadores de América y tendrán lugar en Guadalajara, México del 14 al 19 de marzo."
+  },
+  "navbar": {
+    "host": "sede",
+    "contact": "contacto"
+  },
+  "host": {
+    "title": "SEDE Y ORGANIZADORES"
+  },
+  "icpc": {
+    "title": "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
+    "description": "El International Collegiate Programming Contest es un concurso de programación algorítmica para estudiantes universitarios. Equipos de tres personas, representando a su universidad, trabajan para resolver la mayor cantidad de problemas del mundo real, fomentando la colaboración, la creatividad, la innovación y la capacidad de desempeñarse bajo presión. A través del entrenamiento y la competencia, los equipos se desafían entre sí para elevar el nivel de lo posible. En pocas palabras, es el concurso de programación más antiguo, grande y prestigioso del mundo."
+  },
+  "statistics": {
+    "map": "Mapa ITESO",
+    "schedule": "Agenda",
+    "sponsors": "Patrocinadores"
+  },
+  "schedule": {
+    "dates": {
+      "march14": "14 de marzo",
+      "march15": "15 de marzo",
+      "march16": "16 de marzo",
+      "march17": "17 de marzo",
+      "march18": "18 de marzo",
+      "march19": "19 de marzo"
+    },
+    "tables": {
+      "titles": {
+        "localstart": "Inicio (Local)",
+        "localend": "Fin (Local)",
+        "utcstart": "Inicio (UTC)",
+        "utcend": "Fin (UTC)",
+        "activity": "Actividad",
+        "place": "Lugar",
+        "attendees": "Asistentes",
+        "sponsoredby": "Patrocinado por"
+      }
+    },
+    "activities": {
+      "allAttendeesArrival": "Llegada de todos los asistentes",
+      "checkIn": "Check-In",
+      "pdaCheckIn": "Registro de Asistentes PdA 2024",
+      "welcomeDinner": "Cena de bienvenida",
+      "breakfast": "Desayuno",
+      "excursion": "Excursion",
+      "lunch": "Comida",
+      "sponsorsActivities": "Actividades con los patrocinadores",
+      "dinner": "Cena",
+      "openingCeremony": "Ceremonia de inauguracion",
+      "practiceContest": "Concurso de Practica",
+      "pda2024": "Programadores de America 2024",
+      "closingCeremony": "Ceremonia de clausura",
+      "checkOut": "Check-Out",
+      "leadersSymposium": "Simposio de lideres ICPC LATAM",
+      "checkOutLeaders": "Check-Out de los lideres ICPC LATAM"
+    },
+    "places": {
+      "airport": "Aeropuerto Internacional de Guadalajara",
+      "hotels": "Hotel(es) Sede",
+      "pending": "Pendiente",
+      "pedroArrupeAuditorium": "Auditorio Pedro Arrupe, ITESO",
+      "pedroArrupeAuditoriumEsplanade": "Explanada del Auditorio Pedro Arrupe, ITESO",
+      "WNorthGardenITESO": "Jardin W Norte, ITESO",
+      "MAuditorium": "Auditorio M, ITESO",
+      "iteso": "ITESO",
+      "thePines": "Los Pinos, ITESO"
+    },
+    "attendees": {
+      "all": "Todos"
+    }
+  },
+  "sponsors": {
+    "levels": {
+      "diamond": "Diamante",
+      "platinum": "Platino",
+      "gold": "Oro",
+      "silver": "Plata",
+      "bronze": "Bronce",
+      "allies": "Aliados"
+    },
+    "benefits": {
+      "mainCompetitionSponsor": "Patrocinador principal de la competencia",
+      "stagePresenceForAwardsAnnouncementsAndPhotography": "Presencia en el escenario para anuncios de premios y fotografía",
+      "speakerAtOpeningAndClosingCeremonies": "Orador en las ceremonias de apertura y clausura",
+      "videoAtOpeningCeremony": "Video en ceremonia de inauguración",
+      "videoAtClosingCeremony": "Video en ceremonia de clausura",
+      "sponsorOfOneDinner": "Patrocinador de una de las cenas",
+      "sponsorBoothDuringEventMoments": "Stand de patrocinador durante momentos del evento",
+      "boothAtRegistration": "Stand en el registro",
+      "dailyPresenceAtTheVenue": "Presencia diaria en el sitio",
+      "sponsorTalk30Minutes": "Charla de patrocinador: 30 minutos",
+      "6AccessesForExecutivesAndStaff": "6 accesos para ejecutivos y staff",
+      "technicalTalkWithParticipants20Minutes": "Charla técnica con los participantes: 20 minutos",
+      "5AccessesForExecutivesAndStaff": "5 accesos para ejecutivos y staff",
+      "technicalTalkWithParticipants10Minutes": "Charla técnica con los participantes: 10 minutos",
+      "4AccessesForExecutivesAndStaff": "4 accesos para ejecutivos y staff",
+      "technicalTalkWithParticipants5Minutes": "Charla técnica con los participantes: 5 minutos",
+      "sponsorRecognitionAtLunch": "Reconocimiento como patrocinador del almuerzo",
+      "3AccessesForExecutivesAndStaff": "3 accesos para ejecutivos y staff",
+      "sponsorRecognitionAtBreakfastEachDay": "Reconocimiento como patrocinador del desayuno cada día",
+      "2AccessesForExecutivesAndStaff": "2 accesos para ejecutivos y staff",
+      "OpportunityToInteractWithParticipants": "Oportunidad de interactuar con participantes",
+      "1AccessForExecutivesAndStaff": "1 acceso para ejecutivos y staff"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "icpcRole": "Director ICPC Mexico",
+    "name": "Mtro. Carlos Alberto Fernández Guillot",
+    "email1": "guillot@icpcmexico.org",
+    "email2": "carlosf@iteso.mx",
+    "discord": "Unete a nuestro discord",
+    "facebook": "Siguenos en facebook"
+  }
+}

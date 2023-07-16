@@ -3,8 +3,10 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import EmailIcon from '@mui/icons-material/Email'
 import { Link as ExternalLink } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
 const Guillot: React.FC = () => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -31,7 +33,7 @@ const Guillot: React.FC = () => {
           padding: '5% 0%'
         }}
       >
-        CONTACTO
+        {t('contact.title')}
       </Typography>
       <Box
         component="img"
@@ -58,7 +60,7 @@ const Guillot: React.FC = () => {
           target={'blank'}
         ></ExternalLink>
         <Typography variant="body1" component="div" color={'text.secondary'}>
-          Director ICPC Mexico
+          {t('contact.icpcRole')}
         </Typography>
         <ExternalLink
           key="Guillot"
@@ -66,16 +68,16 @@ const Guillot: React.FC = () => {
           target={'blank'}
         >
           <Typography variant="body1" component="div" color={'text.secondary'}>
-            Mtro. Carlos Alberto Fernández Guillot
+            {t('contact.name')}
           </Typography>
         </ExternalLink>
         <Typography variant="body1" component="div" color={'text.secondary'}>
           <EmailIcon />
-          carlosf@iteso.mx
+          {t('contact.email1')}
         </Typography>
         <Typography variant="body1" component="div" color={'text.secondary'}>
           <EmailIcon />
-          guillot@icpcmexico.org
+          {t('contact.email2')}
         </Typography>
       </Box>
     </Box>

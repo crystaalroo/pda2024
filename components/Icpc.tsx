@@ -2,8 +2,10 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { Link as ExternalLink } from '@mui/material'
+import { useTranslation } from 'next-i18next'
 
 const Icpc: React.FC = () => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -24,7 +26,7 @@ const Icpc: React.FC = () => {
           width: '100%'
         }}
       >
-        INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST
+        {t('icpc.title')}
       </Typography>
       <Box
         sx={{
@@ -55,14 +57,7 @@ const Icpc: React.FC = () => {
           color={'text.secondary'}
           sx={{ width: { md: '60%', xs: '100%' } }}
         >
-          La ICPC organiza el concurso de programación algorítmica para
-          universitarios, en equipos de tres, en representación de su
-          universidad, trabajan para resolver la mayoría de los problemas del
-          mundo real, fomentando la colaboración, la creatividad, la innovación
-          y la capacidad de desempeñarse bajo presión. A través del
-          entrenamiento y la competencia, los equipos se desafían entre sí para
-          elevar el nivel de lo posible. Sencillamente, es el concurso de
-          programación más antiguo, grande y prestigioso del mundo.
+          {t('icpc.description')}
         </Typography>
       </Box>
     </Box>

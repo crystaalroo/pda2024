@@ -1,5 +1,5 @@
-﻿-,-,-,-,Desayuno.,Hotel(es) Sede,Todos,-
--,-,-,-,Programadores de América 2024.,"Auditorio Pedro Arrupe, ITESO.", Todos, -
--,-,-,-,Lunch.,ITESO, Todos, -
--,-,-,-,Ceremonia de Clausura.,"Auditorio M, ITESO.", Todos, -
--,-,-,-,Cena.,"Los Pinos, ITESO.", Todos, -
+﻿-,-,-,-,schedule.activities.breakfast,schedule.places.hotels,schedule.attendees.all,-
+-,-,-,-,schedule.activities.pda2024,schedule.places.pedroArrupeAuditorium,schedule.attendees.all, -
+-,-,-,-,schedule.activities.lunch,schedule.places.iteso,schedule.attendees.all, -
+-,-,-,-,schedule.activities.closingCeremony,schedule.places.MAuditorium,schedule.attendees.all, -
+-,-,-,-,schedule.activities.dinner,schedule.places.thePines,schedule.attendees.all, -
