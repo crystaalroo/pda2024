@@ -1,8 +1,10 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import { useTranslation } from 'next-i18next'
 
 const Intro: React.FC = () => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -24,7 +26,7 @@ const Intro: React.FC = () => {
           width: '100%'
         }}
       >
-        ACERCA DE PROGRAMADORES DE AMERICA 2024
+        {t('intro.title')}
       </Typography>
       <Box
         sx={{
@@ -47,19 +49,7 @@ const Intro: React.FC = () => {
           }}
         />
         <Typography variant="body1" component="div" color={'text.secondary'}>
-          Los Concursos Regionales se agrupan en ocho Campeonatos: <br></br>“The
-          ICPC Africa & Arab Championship”, “The ICPC Asia East Championship”,
-          “The ICPC Asia Pacific Championship”, “The ICPC Asia West
-          Championship”, “The ICPC European Championship”, “The ICPC Latin
-          America Championship”, “The ICPC Northern Eurasia Championship” y “The
-          ICPC North America Championship”. Campeonatos adicionales pueden ser
-          definidos por el Comité Ejecutivo del ICPC. <br></br>Las reglas de
-          composición y requisitos del equipo para una competencia de Campeonato
-          deben ser las mismas que para las Finales Mundiales. Una competencia
-          de Campeonato debe llevarse a cabo a más tardar tres meses antes de
-          las Finales Mundiales. En el cronograma regional 2023/24 el campeonato
-          “The ICPC Latin America Championship” se denominará Programadores de
-          América y tendrán lugar en Guadalajara, México del 14 al 19 de marzo.
+          {t('intro.description')}
         </Typography>
       </Box>
     </Box>

@@ -4,6 +4,7 @@ import Link from '@mui/material/Link'
 import { keyframes, styled } from '@mui/material/styles'
 import ButtonBase from '@mui/material/ButtonBase'
 import Typography from '@mui/material/Typography'
+import { useTranslation } from 'react-i18next'
 
 const ani = keyframes`from {
     mask-position: 0 0;
@@ -50,6 +51,7 @@ const ButtonContainerButton = styled(ButtonBase)(({ theme }) => ({
 }))
 
 const Social: React.FC = () => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -77,7 +79,7 @@ const Social: React.FC = () => {
           color={'text.secondary'}
           sx={{ display: { md: 'flex', xs: 'none' } }}
         >
-          Unete a nuestro discord
+          {t('contact.discord')}
         </Typography>
         <ButtonContainer
           href="https://discord.gg/icpcmx"
@@ -123,7 +125,7 @@ const Social: React.FC = () => {
           color={'text.secondary'}
           sx={{ display: { md: 'flex', xs: 'none' } }}
         >
-          Siguenos en facebook:
+          {t('contact.facebook')}
         </Typography>
         <ButtonContainer
           href="https://es-la.facebook.com/acmitesochapter/"

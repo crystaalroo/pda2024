@@ -7,22 +7,22 @@ import {
 const themeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: '#ffffff',
-      contrastText: '#131515'
+      main: '#243E36',
+      contrastText: '#F1F7ED'
     },
     secondary: {
-      main: '#0D1B2A'
+      main: '#C2A83E'
     },
     background: {
-      default: '#4c956c',
-      paper: '#4c956c'
+      default: '#7CA982',
+      paper: '#243E36'
     },
     text: {
-      primary: '#FFFFFF',
-      secondary: '#fefee3',
-      disabled: '#fefee3'
+      primary: '#F1F7ED',
+      secondary: '#E0EEC6',
+      disabled: '#F1F7ED'
     },
-    divider: '#ffffff'
+    divider: '#C2A83E'
   },
   typography: {
     htmlFontSize: 16,

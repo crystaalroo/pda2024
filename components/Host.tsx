@@ -2,9 +2,11 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { Link as ExternalLink } from '@mui/material'
-import Link from 'next/link'
+import Link from './Link'
+import { useTranslation } from 'next-i18next'
 
 const Host: React.FC = () => {
+  const { t } = useTranslation()
   return (
     <Box
       sx={{
@@ -26,9 +28,9 @@ const Host: React.FC = () => {
           width: '100%'
         }}
       >
-        SEDE Y ORGANIZADORES
+        {t('host.title')}
       </Typography>
-      <Link key="site" href="/">
+      <Link key="site" href="/" skipLocaleHandling={false}>
         <Box
           component="img"
           sx={{

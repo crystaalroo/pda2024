@@ -16,7 +16,7 @@ const TopBanner: React.FC = () => {
       <Box
         component="img"
         alt="Top Banner"
-        src="assets/toph.png"
+        src="/assets/toph.png"
         sx={{
           height: '100%',
           maxHeight: '180px',

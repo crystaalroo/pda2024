@@ -11,16 +11,25 @@ import {
   MenuItem,
   Toolbar,
   Typography,
-  Link as ExternalLink,
   CardActionArea
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import Link from 'next/link'
+import Link from './Link'
+import LanguageSwitchLink from './LanguageSwitchLink'
+import i18nextConfig from '../next-i18next.config'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 
 const pages = [
   {
-    name: 'Contacto',
-    link: '/contact'
+    i18n: 'navbar.host',
+    link: 'https://iteso.mx/',
+    isExternal: true
+  },
+  {
+    i18n: 'navbar.contact',
+    link: '/contact',
+    isExternal: false
   }
 ]
 const revPages = pages.map(x => x).reverse()
@@ -35,7 +44,10 @@ const NavBar: React.FC = () => {
   const handleCloseNavMenu = (): void => {
     setAnchorElNav(null)
   }
-
+  const router = useRouter()
+  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions, @typescript-eslint/prefer-nullish-coalescing
+  const currentLocale = router.query.locale || i18nextConfig.i18n.defaultLocale
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -81,17 +93,17 @@ const NavBar: React.FC = () => {
                 display: { xs: 'none', md: 'flex' }
               }}
             >
-              <Link key={'card'} href={'/'}>
+              <Link key={'card'} href={'/'} skipLocaleHandling={false}>
                 <Card
                   sx={{
                     width: '200px',
                     height: '240px',
                     border: '5px',
-                    borderColor: 'text.secondary',
+                    borderColor: 'divider',
                     borderLeftStyle: 'solid',
                     borderRightStyle: 'solid',
                     borderBottomStyle: 'solid',
-                    bgcolor: 'white'
+                    bgcolor: 'primary.contrastText'
                   }}
                 >
                   <CardActionArea>
@@ -107,9 +119,9 @@ const NavBar: React.FC = () => {
                         variant="body2"
                         component="div"
                         align="left"
-                        color={'primary.contrastText'}
+                        color={'primary.main'}
                       >
-                        PROGRAMADORES DE AMERICA 2024
+                        {t('pda2024')}
                       </Typography>
                     </CardContent>
                     <Box
@@ -121,7 +133,7 @@ const NavBar: React.FC = () => {
                     >
                       <Box
                         sx={{
-                          backgroundColor: 'white',
+                          backgroundColor: 'primary.contrastText',
                           height: '140px',
                           width: '140px',
                           margin: 'auto',
@@ -132,7 +144,7 @@ const NavBar: React.FC = () => {
                       >
                         <CardMedia
                           component="img"
-                          image="/assets/logopda.jpg"
+                          image="/assets/logopda.png"
                           alt="icpcmx"
                           sx={{
                             width: '100%'
@@ -150,20 +162,40 @@ const NavBar: React.FC = () => {
                 flexGrow: 1,
                 flexBasis: 0
               }}
-            />
-            <Link key={'card'} href={'/'}>
+            >
+              <Box
+                sx={{
+                  display: { xs: 'flex', md: 'none' },
+                  flexDirection: 'column',
+                  textAlign: 'left',
+                  flexWrap: 'nowrap'
+                }}
+              >
+                {i18nextConfig.i18n.locales.map(locale => {
+                  if (locale === currentLocale) return null
+                  return <LanguageSwitchLink locale={locale} key={locale} />
+                })}
+              </Box>
+            </Box>
+            <Link key={'card'} href={'/'} skipLocaleHandling={false}>
               <Box
                 sx={{
                   display: { xs: 'flex', md: 'none' },
                   flexGrow: 1,
                   flexBasis: 0,
                   justifyContent: 'center',
-                  alignItems: 'center'
+                  alignItems: 'center',
+                  backgroundColor: 'primary.contrastText',
+                  border: '3px',
+                  borderColor: 'divider',
+                  borderLeftStyle: 'solid',
+                  borderRightStyle: 'solid',
+                  borderBottomStyle: 'solid'
                 }}
               >
                 <CardMedia
                   component="img"
-                  image="/assets/logopda.jpg"
+                  image="/assets/logopda.png"
                   alt="icpcmx"
                   sx={{
                     width: '140px'
@@ -207,69 +239,91 @@ const NavBar: React.FC = () => {
                   display: { xs: 'block', md: 'none' }
                 }}
               >
-                {revPages.map(page => (
-                  <Link key={page.name} href={page.link}>
-                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">{page.name}</Typography>
-                    </MenuItem>
-                  </Link>
-                ))}
-                <ExternalLink
-                  key="Sede"
-                  href="https://iteso.mx/"
-                  target={'blank'}
-                >
-                  <MenuItem key="Sede" onClick={handleCloseNavMenu}>
-                    <Typography
-                      textAlign="center"
-                      sx={{ color: 'primary.contrastText' }}
+                {revPages.map(page =>
+                  page.isExternal ? (
+                    <a href={page.link} target="blank" key={page.i18n}>
+                      <MenuItem onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center">
+                          {t(page.i18n)}
+                        </Typography>
+                      </MenuItem>
+                    </a>
+                  ) : (
+                    <Link
+                      key={page.i18n}
+                      href={page.link}
+                      skipLocaleHandling={false}
                     >
-                      Sede
-                    </Typography>
-                  </MenuItem>
-                </ExternalLink>
+                      <MenuItem key={page.i18n} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center">
+                          {t(page.i18n)}
+                        </Typography>
+                      </MenuItem>
+                    </Link>
+                  )
+                )}
               </Menu>
             </Box>
             <Box
               sx={{
-                flexDirection: 'row-reverse',
+                justifyContent: 'flex-end',
                 flexGrow: 1,
                 display: { xs: 'none', md: 'flex' }
+                // background: 'yellow'
               }}
             >
-              {pages.map(page => (
-                <Link key={page.name} href={page.link}>
-                  <Button
-                    key={page.name}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      my: 2,
-                      color: 'primary.contrastText',
-                      display: 'block'
-                    }}
+              {pages.map(page =>
+                page.isExternal ? (
+                  <a
+                    key={page.i18n}
+                    href={page.link}
+                    target="blank"
+                    rel="noopener noreferrer"
                   >
-                    {page.name}
-                  </Button>
-                </Link>
-              ))}
-              <ExternalLink
-                key="Sede"
-                href="https://iteso.mx/"
-                target={'blank'}
-              >
-                <Button
-                  key="Sede"
-                  onClick={handleCloseNavMenu}
-                  sx={{
-                    my: 2,
-                    color: 'primary.contrastText',
-                    display: 'block'
-                  }}
-                >
-                  {'Sede'}
-                </Button>
-              </ExternalLink>
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        my: 2,
+                        color: 'primary.contrastText',
+                        display: 'block'
+                      }}
+                    >
+                      {t(page.i18n)}
+                    </Button>
+                  </a>
+                ) : (
+                  <Link
+                    key={page.i18n}
+                    href={page.link}
+                    skipLocaleHandling={false}
+                  >
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        my: 2,
+                        color: 'primary.contrastText',
+                        display: 'block'
+                      }}
+                    >
+                      {t(page.i18n)}
+                    </Button>
+                  </Link>
+                )
+              )}
             </Box>
+          </Box>
+          <Box
+            sx={{
+              display: { md: 'flex', xs: 'none' },
+              flexDirection: 'column',
+              textAlign: 'left',
+              flexWrap: 'nowrap'
+            }}
+          >
+            {i18nextConfig.i18n.locales.map(locale => {
+              if (locale === currentLocale) return null
+              return <LanguageSwitchLink locale={locale} key={locale} />
+            })}
           </Box>
         </Toolbar>
       </AppBar>

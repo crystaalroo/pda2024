@@ -1,0 +1,125 @@
+{
+  "pda2024": "PROGRAMADORES DA AMÉRICA 2024",
+  "carousel": {
+    "equipos": "40 EQUIPES OFICIAIS",
+    "sede": "REUNIDOS EM UM LOCAL",
+    "gdl": "DESCUBRA GUADALAJARA"
+  },
+  "intro": {
+    "title": "SOBRE PROGRAMADORES DA AMÉRICA 2024",
+    "description": "Os concursos regionais são divididos em oito campeonatos; o Campeonato ICPC África e Árabe, o Campeonato ICPC Ásia Oriental, o Campeonato ICPC Ásia-Pacífico, o Campeonato ICPC Ásia Ocidental, o Campeonato Europeu ICPC, o Campeonato Latino-Americano ICPC, o Campeonato ICPC Norte-Eurásia e o Campeonato Norte-Americano ICPC. Campeonatos adicionais podem ser definidos pelo Comitê Executivo da ICPC.\nO concurso regional de mais alto nível pode ser um concurso de campeonato. As regras de composição e requisitos da equipe para um concurso de campeonato devem ser as mesmas que para as Finais Mundiais. Um concurso de campeonato deve ser realizado no máximo três meses antes das finais mundiais.\nNota: O Calendário Regional 2023/24 pode se estender até o primeiro trimestre de 2024."
+  },
+  "navbar": {
+    "host": "sede",
+    "contact": "contato"
+  },
+  "host": {
+    "title": "SEDE E ORGANIZADORES"
+  },
+  "icpc": {
+    "title": "INTERNATIONAL COLLEGIATE PROGRAMMING CONTEST",
+    "description": "O International Collegiate Programming Contest é uma competição de programação algorítmica para estudantes universitários. Equipes de três pessoas, representando suas universidades, trabalham para resolver a maioria dos problemas do mundo real, promovendo a colaboração, criatividade, inovação e habilidade de trabalhar sob pressão. Através de treinamento e competição, as equipes desafiam umas às outras para elevar o nível do possível. Simplificando, é o concurso de programação mais antigo, maior e mais prestigioso do mundo."
+  },
+  "statistics": {
+    "map": "Mapa do ITESO",
+    "schedule": "Agenda",
+    "sponsors": "Patrocinadores"
+  },
+  "schedule": {
+    "dates": {
+      "march14": "14 de março",
+      "march15": "15 de março",
+      "march16": "16 de março",
+      "march17": "17 de março",
+      "march18": "18 de março",
+      "march19": "19 de março"
+    },
+    "tables": {
+      "titles": {
+        "localstart": "Início (Local)",
+        "localend": "Fim (Local)",
+        "utcstart": "Início (UTC)",
+        "utcend": "Fim (UTC)",
+        "activity": "Atividade",
+        "place": "Local",
+        "attendees": "Participantes",
+        "sponsoredby": "Patrocinado por"
+      }
+    },
+    "activities": {
+      "allAttendeesArrival": "Chegada de todos os participantes",
+      "checkIn": "Check-In",
+      "pdaCheckIn": "Registro de Participantes PdA 2024",
+      "welcomeDinner": "Jantar de Boas-Vindas",
+      "breakfast": "Café da Manhã",
+      "excursion": "Excursão",
+      "lunch": "Almoço",
+      "sponsorsActivities": "Atividades com os patrocinadores",
+      "dinner": "Jantar",
+      "openingCeremony": "Cerimônia de Abertura",
+      "practiceContest": "Concurso de Prática",
+      "pda2024": "Programadores da América 2024",
+      "closingCeremony": "Cerimônia de Encerramento",
+      "checkOut": "Check-Out",
+      "leadersSymposium": "Simpósio de Líderes ICPC LATAM",
+      "checkOutLeaders": "Check-Out dos líderes ICPC LATAM"
+    },
+    "places": {
+      "airport": "Aeroporto Internacional de Guadalajara",
+      "hotels": "Hotel(is) do Local",
+      "pending": "Pendente",
+      "pedroArrupeAuditorium": "Auditório Pedro Arrupe, ITESO",
+      "pedroArrupeAuditoriumEsplanade": "Esplanada do Auditório Pedro Arrupe, ITESO",
+      "WNorthGardenITESO": "Jardim W Norte, ITESO",
+      "MAuditorium": "Auditório M, ITESO",
+      "iteso": "ITESO",
+      "thePines": "Os Pinos, ITESO"
+    },
+    "attendees": {
+      "all": "Todos"
+    }
+  },
+  "sponsors": {
+    "levels": {
+      "diamond": "Diamante",
+      "platinum": "Platina",
+      "gold": "Ouro",
+      "silver": "Prata",
+      "bronze": "Bronze",
+      "allies": "Aliados"
+    },
+    "benefits": {
+      "mainCompetitionSponsor": "Principal Patrocinador da Competição",
+      "stagePresenceForAwardsAnnouncementsAndPhotography": "Presença no Palco para Anúncios de Prêmios e Fotografia",
+      "speakerAtOpeningAndClosingCeremonies": "Palestrante nas Cerimônias de Abertura e Encerramento",
+      "videoAtOpeningCeremony": "Vídeo na Cerimônia de Abertura",
+      "videoAtClosingCeremony": "Vídeo na Cerimônia de Encerramento",
+      "sponsorOfOneDinner": "Patrocinador de um Jantar",
+      "sponsorBoothDuringEventMoments": "Stand do Patrocinador Durante Momentos do Evento",
+      "boothAtRegistration": "Stand no Registro",
+      "dailyPresenceAtTheVenue": "Presença Diária no Local",
+      "sponsorTalk30Minutes": "Palestra do Patrocinador: 30 minutos",
+      "6AccessesForExecutivesAndStaff": "6 Acessos para Executivos e Staff",
+      "technicalTalkWithParticipants20Minutes": "Palestra Técnica com os Participantes: 20 minutos",
+      "5AccessesForExecutivesAndStaff": "5 Acessos para Executivos e Staff",
+      "technicalTalkWithParticipants10Minutes": "Palestra Técnica com os Participantes: 10 minutos",
+      "4AccessesForExecutivesAndStaff": "4 Acessos para Executivos e Staff",
+      "technicalTalkWithParticipants5Minutes": "Palestra Técnica com os Participantes: 5 minutos",
+      "sponsorRecognitionAtLunch": "Reconhecimento como Patrocinador no Almoço",
+      "3AccessesForExecutivesAndStaff": "3 Acessos para Executivos e Staff",
+      "sponsorRecognitionAtBreakfastEachDay": "Reconhecimento como Patrocinador no Café da Manhã Diário",
+      "2AccessesForExecutivesAndStaff": "2 Acessos para Executivos e Staff",
+      "OpportunityToInteractWithParticipants": "Oportunidade de Interagir com os Participantes",
+      "1AccessForExecutivesAndStaff": "1 Acesso para Executivos e Staff"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "icpcRole": "Diretor ICPC México",
+    "name": "Mtro. Carlos Alberto Fernández Guillot",
+    "email1": "guillot@icpcmexico.org",
+    "email2": "carlosf@iteso.mx",
+    "discord": "Junte-se ao nosso Discord",
+    "facebook": "Siga-nos no Facebook"
+  }
+}
