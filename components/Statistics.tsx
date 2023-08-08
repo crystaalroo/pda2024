@@ -22,7 +22,7 @@ const imagesE = [
 
 const imagesI = [
   {
-    url: '/assets/agendaicpc.jpg',
+    url: '/assets/agenda.png',
     i18n: 'statistics.schedule',
     link: '/agenda'
   },
@@ -35,12 +35,12 @@ const imagesI = [
     url: '/assets/prizes.jpg',
     i18n: 'statistics.sponsors',
     link: '/sponsors'
+  },
+  {
+    url: '/assets/winners.jpg',
+    i18n: 'statistics.rules',
+    link: '/payment'
   }
-  // {
-  //   url: '/assets/winners.jpg',
-  //   title: 'Reglas de promoción',
-  //   link: '/payment'
-  // },
   // {
   //   url: '/assets/participants.jpg',
   //   title: 'Participantes',
