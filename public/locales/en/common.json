@@ -24,7 +24,8 @@
     "map": "ITESO Map",
     "schedule": "Schedule",
     "sponsors": "Sponsors",
-    "rules": "Promotion rules"
+    "rules": "Promotion rules",
+    "results": "Problems and Results"
   },
   "schedule": {
     "dates": {
@@ -58,7 +59,7 @@
       "sponsorsActivities": "Activities with sponsors",
       "dinner": "Dinner",
       "openingCeremony": "Opening Ceremony",
-      "practiceContest": "Practice Contest",
+      "practiceContest": "Dress Rehearsal",
       "pda2024": "Programmers of America 2024",
       "closingCeremony": "Closing Ceremony",
       "checkOut": "Check-Out",

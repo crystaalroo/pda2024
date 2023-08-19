@@ -24,7 +24,8 @@
     "map": "Mapa do ITESO",
     "schedule": "Agenda",
     "sponsors": "Patrocinadores",
-    "rules": "Regras de promoção"
+    "rules": "Regras de promoção",
+    "results": "Problemas e resultados"
   },
   "schedule": {
     "dates": {
@@ -58,7 +59,7 @@
       "sponsorsActivities": "Atividades com os patrocinadores",
       "dinner": "Jantar",
       "openingCeremony": "Cerimônia de Abertura",
-      "practiceContest": "Concurso de Prática",
+      "practiceContest": "Warmup Contest",
       "pda2024": "Programadores da América 2024",
       "closingCeremony": "Cerimônia de Encerramento",
       "checkOut": "Check-Out",

@@ -12,12 +12,17 @@ const imagesE = [
     url: '/assets/mapaiteso.jpg',
     i18n: 'statistics.map',
     link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
-  }
+  },
   // {
   //   url: '/assets/event2.JPG',
   //   title: 'Fotos del evento',
   //   link: 'https://www.flickr.com/photos/tcmxicpc/albums'
   // }
+  {
+    url: '/assets/results.jpg',
+    i18n: 'statistics.results',
+    link: 'https://icpc.global/regionals/finder/Latin-America-Champ-2024'
+  }
 ]
 
 const imagesI = [
@@ -39,7 +44,7 @@ const imagesI = [
   {
     url: '/assets/winners.jpg',
     i18n: 'statistics.rules',
-    link: '/payment'
+    link: '/rules'
   }
   // {
   //   url: '/assets/participants.jpg',
