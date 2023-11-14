@@ -7,13 +7,25 @@ import MainBoard from '../../components/MainBoard'
 import BoardCard from '../../components/BoardCard'
 import Diamond from '../../components/Diamond'
 import Bronce from '../../components/Bronce'
-import { Typography } from '@mui/material'
+import { List, ListItem, Typography, SxProps, Theme } from '@mui/material'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 import { useTranslation } from 'react-i18next'
 
 const getStaticProps = makeStaticProps(['common'])
 export { getStaticPaths, getStaticProps }
-
+interface Props {
+  children: React.ReactNode
+  sx?: SxProps<Theme> | undefined
+}
+const Item: React.FC<Props> = ({ children, sx }) => {
+  return (
+    <ListItem sx={{ ...sx }}>
+      <Typography variant="body1" component="div" color={'text.secondary'}>
+        {children}
+      </Typography>
+    </ListItem>
+  )
+}
 const Sponsor: NextPage = () => {
   const { t } = useTranslation('common')
   return (
@@ -38,6 +50,49 @@ const Sponsor: NextPage = () => {
             {t('statistics.sponsors')}
           </Typography>
         </BoardCard>
+        <BoardCard barSide="right">
+          <Box
+            sx={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              width: '100%'
+            }}
+          >
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('sponsors.benefits.beneficio8')}
+            </Typography>
+            <List
+              sx={{
+                listStyleType: 'disc',
+                color: 'text.secondary',
+                padding: 0,
+                width: '100%'
+              }}
+            >
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio1')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio2')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio3')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio4')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio5')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio6')}
+              </Item>
+              <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+                {t('sponsors.benefits.beneficio7')}
+              </Item>
+            </List>
+          </Box>
+        </BoardCard>
         <BoardCard barSide="none">
           <Bronce
             name={t('sponsors.levels.diamond')}
@@ -58,7 +113,10 @@ const Sponsor: NextPage = () => {
               'sponsors.benefits.boothAtRegistration',
               'sponsors.benefits.dailyPresenceAtTheVenue',
               'sponsors.benefits.sponsorTalk30Minutes',
-              'sponsors.benefits.6AccessesForExecutivesAndStaff'
+              'sponsors.benefits.6AccessesForExecutivesAndStaff',
+              'sponsors.benefits.logo1',
+              'sponsors.benefits.logo2',
+              'sponsors.benefits.logo3'
             ]}
           />
         </BoardCard>
@@ -76,7 +134,9 @@ const Sponsor: NextPage = () => {
               'sponsors.benefits.boothAtRegistration',
               'sponsors.benefits.dailyPresenceAtTheVenue',
               'sponsors.benefits.technicalTalkWithParticipants20Minutes',
-              'sponsors.benefits.5AccessesForExecutivesAndStaff'
+              'sponsors.benefits.5AccessesForExecutivesAndStaff',
+              'sponsors.benefits.logo1',
+              'sponsors.benefits.logo2'
             ]}
           />
         </BoardCard>
@@ -91,7 +151,8 @@ const Sponsor: NextPage = () => {
               'sponsors.benefits.sponsorBoothDuringEventMoments',
               'sponsors.benefits.dailyPresenceAtTheVenue',
               'sponsors.benefits.technicalTalkWithParticipants10Minutes',
-              'sponsors.benefits.4AccessesForExecutivesAndStaff'
+              'sponsors.benefits.4AccessesForExecutivesAndStaff',
+              'sponsors.benefits.logo2'
             ]}
           />
         </BoardCard>

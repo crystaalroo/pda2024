@@ -1,4 +1,4 @@
 ﻿-,-,-,-,schedule.activities.allAttendeesArrival,schedule.places.airport,schedule.attendees.all,-
--,-,-,-,schedule.activities.checkIn,schedule.places.hotels,schedule.attendees.all,-
--,-,-,-,schedule.activities.pdaCheckIn,schedule.places.pending,schedule.attendees.all,-
--,-,-,-,schedule.activities.welcomeDinner,schedule.places.pending,schedule.attendees.all,-
+15:00,23:00,21:00,05:00(+1),schedule.activities.checkIn,schedule.places.hotels,schedule.attendees.all,-
+15:00,23:00,21:00,05:00(+1),schedule.activities.pdaCheckIn,schedule.places.pending,schedule.attendees.all,-
+18:00,23:00,00:00 (+1),05:00 (+1),schedule.activities.welcomeDinner,schedule.places.pending,schedule.attendees.all,-

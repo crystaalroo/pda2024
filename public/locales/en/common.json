@@ -1,7 +1,7 @@
 {
   "pda2024": "PROGRAMMERS OF AMERICA 2024",
   "carousel": {
-    "equipos": "40 OFFICIAL TEAMS",
+    "equipos": "42 OFFICIAL TEAMS",
     "sede": "GATHERED IN ONE LOCATION",
     "gdl": "DISCOVER GUADALAJARA"
   },
@@ -25,9 +25,13 @@
     "schedule": "Schedule",
     "sponsors": "Sponsors",
     "rules": "Promotion rules",
-    "results": "Problems and Results"
+    "results": "Problems and Results",
+    "hotel": "Hotel",
+    "masters": "First Masters Championship LATAM 2024",
+    "information": "Important Information for Participants"
   },
   "schedule": {
+    "message": "Day and Activities to be confirmed in the Event Agenda.",
     "dates": {
       "march14": "March 14th",
       "march15": "March 15th",
@@ -64,7 +68,9 @@
       "closingCeremony": "Closing Ceremony",
       "checkOut": "Check-Out",
       "leadersSymposium": "ICPC LATAM Leaders Symposium",
-      "checkOutLeaders": "ICPC LATAM Leaders Check-Out"
+      "checkOutLeaders": "ICPC LATAM Leaders Check-Out",
+      "excursiono": "Optional day for excursions. Once the options are confirmed, the information will be published",
+      "notincluded": "Activity NOT included in the event agenda."
     },
     "places": {
       "airport": "Guadalajara International Airport",
@@ -112,7 +118,18 @@
       "sponsorRecognitionAtBreakfastEachDay": "Sponsor Recognition at Breakfast Each Day",
       "2AccessesForExecutivesAndStaff": "2 Accesses for Executives and Staff",
       "OpportunityToInteractWithParticipants": "Opportunity to Interact with Participants",
-      "1AccessForExecutivesAndStaff": "1 Access for Executives and Staff"
+      "1AccessForExecutivesAndStaff": "1 Access for Executives and Staff",
+      "logo1": "Logo on the blanket",
+      "logo2": "Logo on the notebook",
+      "logo3": "Logo on the commemorative T-shirt",
+      "beneficio1": "Presence on the website",
+      "beneficio2": "Mentions and acknowledgments on social media",
+      "beneficio3": "Logo on digital and printed materials",
+      "beneficio4": "Banners",
+      "beneficio5": "Branding (depending on the sponsorship level)",
+      "beneficio6": "Right to include promotional items in individual kits",
+      "beneficio7": "Individuals with access rights are entitled to attend all agenda activities, including opening and closing ceremonies.",
+      "beneficio8": "Benefits for all levels:"
     }
   },
   "contact": {
@@ -161,7 +178,7 @@
     "text7": "Let 'N_WF' be the number of World Finals slots assigned to Latin America. Considering the results in the Championship:",
     "sec5list1": "The champion of each of the six regions receives a slot.",
     "sec5list2": "The remaining slots are assigned to the NW_F - 6 teams with the best performance.",
-    "text8": "Only one team from a given institution can advance to the World Finals. Airfare to the World Finals will be covered for the promoted teams' contestants.",
+    "text8": "Airfare to the World Finals will be covered for the promoted teams' contestants.",
     "sec6": "Latin American Champion",
     "text9": "The team with the best performance in the Championship will be declared the Latin American Champion.",
     "sec7": "Unforeseen Cases",
@@ -188,5 +205,63 @@
     "sec8list34": "fractions_R = 0",
     "sec8list4": "In case of a tie in 3.1, all tied regions receive a slot, resulting in a total number of slots greater than N if that happens in the last iteration of 3.",
     "sec8list5": "Fractions greater than zero must be carried over to the next year."
+  },
+  "hotels": {
+    "intro": "The ICPC Mexico region, organizer of the First LATAM 'ICPC Programmers of America 2024 Championship', will cover the accommodation for all participants during the confirmed days on the event agenda.",
+    "benefits": {
+      "b1": "American buffet breakfast.",
+      "b2": "Gym",
+      "b3": "Covered parking",
+      "b4": "Local and national 01 800 calls",
+      "b5": "High-speed wireless internet in the room and hotel areas.",
+      "b6": "Complimentary parking for guests",
+      "b7": "Complimentary coffee and tea kit in the room per night.",
+      "b8": "1 complimentary bottle of water in the room per night",
+      "b9": "Tip",
+      "b10": "Taxes",
+      "b11": "American buffet breakfast at Holiday Inn Express ITESO",
+      "b12": "Full kitchen",
+      "b13": "Roof garden",
+      "b14": "Play area",
+      "b15": "Multi-purpose court",
+      "b16": "Study area",
+      "b17": "Reception and package storage",
+      "b18": "Coffee or natural water station from 5:00 to 7:00 AM and from 8:00 PM to 12:00 AM outside the elevator.",
+      "b19": "Access to recreational areas in livUp by presenting the event badge."
+    },
+    "time": {
+      "iteso1": "ITESO: Walking, 5 minutes.",
+      "aero1": "Guadalajara Airport: Car, 15 - 30 minutes",
+      "iteso2": "ITESO: Car, 15 - 20 minutes.",
+      "aero2": "Guadalajara Airport: Car, 30 - 35 minutes.",
+      "iteso3": "ITESO: Walking, 15 minutes.",
+      "holiday": "Holiday Inn Express Guadalajara ITESO: Walking, 8 - 10 minutes.",
+      "livup": "LIVUP: Student Residence: Walking, 8 - 10 minutes"
+    },
+    "words": {
+      "includes": "Includes:",
+      "time": "Time to:"
+    }
+  },
+  "informatio": {
+    "sub": "Important Information for Participants",
+    "sec1": "Regulation",
+    "sec2": "Visa",
+    "sec3": "Passport",
+    "sec4": "Costs",
+    "linea1": "Programmers of America 2024 will align with the rules of the World Finals.",
+    "linea2": "This will be the primary reference for any inquiries related to team participation.",
+    "linea3": "If doubts persist, please consult your Regional Director.",
+    "linea4": "Due to the inability to use the same functionality employed by participants in the World Finals (icpc.global) to capture participants' passport information in Programmers of America 2024, we have added a new tab in the attendee profile called 'Extra-Field'.",
+    "linea5": "Enter your passport number in this field.",
+    "linea6": "If you do not have a passport, enter your official identification number.",
+    "linea7": "For the following members of qualified teams:",
+    "linea8": "3 contestants from each qualified team.",
+    "linea9": "1 head coach from each qualified team.",
+    "linea10": "Participation in Programmers of America 2024 will be FREE during the event dates, from March 14 to 18, 2024.",
+    "linea11": "This includes accommodation, local transportation, meals, as well as access to all scheduled activities and materials provided to each participant.",
+    "linea12": "Participants are responsible for covering the costs of air, land, and/or sea transportation from their place of origin to Guadalajara, Mexico.",
+    "linea13": "It does not include transportation to the venue (airfare or other means), as well as additional nights and activities and expenses not included in the agenda.",
+    "linea14": "The remaining members of qualified teams (coaches, assistants) must contribute a participation fee, which will include the same package considered for contestants and coaches. This package will be managed by the organizers. We will soon share the amount of the recovery fee, as well as the process for payment."
   }
 }

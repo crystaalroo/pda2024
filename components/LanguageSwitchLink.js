@@ -4,7 +4,6 @@ import languageDetector from '../lib/languageDetector'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Button } from '@mui/material'
-import { FormatColorText } from '@mui/icons-material'
 
 const flags = {
   es: 'mx',
@@ -28,8 +27,10 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
     href = rest.href ? `/${locale}${rest.href}` : pName
   }
 
+  console.log('href', href)
   const switchLanguage = e => {
     e.preventDefault()
+    console.log('Switching language to', locale)
     languageDetector.cache(locale)
     router.reload()
   }
@@ -45,7 +46,7 @@ const LanguageSwitchLink = ({ locale, ...rest }) => {
         // variant="elevated"
         color="primary"
         size="small"
-        startIcon={<span class={`fi fi-${flags[locale]} fis`} />}
+        startIcon={<span className={`fi fi-${flags[locale]} fis`} />}
       >
         {locale}
       </Button>

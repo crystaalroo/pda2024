@@ -22,6 +22,11 @@ const imagesE = [
     url: '/assets/results.jpg',
     i18n: 'statistics.results',
     link: 'https://icpc.global/regionals/finder/Latin-America-Champ-2024'
+  },
+  {
+    url: '/assets/masters.jpg',
+    i18n: 'statistics.masters',
+    link: 'https://icpc.global/regionals/finder/MMXLATAM-2024'
   }
 ]
 
@@ -31,11 +36,11 @@ const imagesI = [
     i18n: 'statistics.schedule',
     link: '/agenda'
   },
-  // {
-  //   url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
-  //   title: 'Hospedaje',
-  //   link: '/hotel'
-  // },
+  {
+    url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
+    i18n: 'statistics.hotel',
+    link: '/hotel'
+  },
   {
     url: '/assets/prizes.jpg',
     i18n: 'statistics.sponsors',
@@ -45,6 +50,11 @@ const imagesI = [
     url: '/assets/winners.jpg',
     i18n: 'statistics.rules',
     link: '/rules'
+  },
+  {
+    url: '/assets/information.jpg',
+    i18n: 'statistics.information',
+    link: '/information'
   }
   // {
   //   url: '/assets/participants.jpg',

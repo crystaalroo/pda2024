@@ -4,14 +4,7 @@ import Footer from '../../components/Footer'
 import TopBanner from '../../components/TopBanner'
 import type { NextPage } from 'next'
 import BoardCard from '../../components/BoardCard'
-import {
-  List,
-  ListItem,
-  Typography,
-  Link as ExternalLink,
-  SxProps,
-  Theme
-} from '@mui/material'
+import { List, ListItem, Typography, SxProps, Theme } from '@mui/material'
 import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 import { useTranslation } from 'react-i18next'
 import TextCascadeBoard from '../../components/TextCascadeBoard'
@@ -22,10 +15,6 @@ export { getStaticPaths, getStaticProps }
 interface Props {
   children: React.ReactNode
   sx?: SxProps<Theme> | undefined
-}
-
-interface MenuItem {
-  label: string
 }
 
 const Item: React.FC<Props> = ({ children, sx }) => {
@@ -74,12 +63,15 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec1')}
             </Typography>
-            <Typography>{t('rules.text1')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text1')}
+            </Typography>
             <List
               sx={{
                 listStyleType: 'disc',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -111,12 +103,15 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec2')}
             </Typography>
-            <Typography>{t('rules.text2')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text2')}
+            </Typography>
             <List
               sx={{
                 listStyleType: 'disc',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -157,12 +152,15 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec3')}
             </Typography>
-            <Typography>{t('rules.text3')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text3')}
+            </Typography>
             <List
               sx={{
                 listStyleType: 'disc',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -203,13 +201,18 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec4')}
             </Typography>
-            <Typography>{t('rules.text4')}</Typography>
-            <Typography>{t('rules.text5')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text4')}
+            </Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text5')}
+            </Typography>
             <List
               sx={{
                 listStyleType: 'disc',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -244,13 +247,18 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec5')}
             </Typography>
-            <Typography>{t('rules.text6')}</Typography>
-            <Typography>{t('rules.text7')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text6')}
+            </Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text7')}
+            </Typography>
             <List
               sx={{
                 listStyleType: 'disc',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -260,7 +268,9 @@ const Payment: NextPage = () => {
                 {t('rules.sec5list2')}
               </Item>
             </List>
-            <Typography>{t('rules.text8')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text8')}
+            </Typography>
           </Box>
         </BoardCard>
         <BoardCard barSide="right">
@@ -280,7 +290,9 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec6')}
             </Typography>
-            <Typography>{t('rules.text9')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text9')}
+            </Typography>
           </Box>
         </BoardCard>
         <BoardCard barSide="right">
@@ -300,7 +312,9 @@ const Payment: NextPage = () => {
             >
               {t('rules.sec7')}
             </Typography>
-            <Typography>{t('rules.text10')}</Typography>
+            <Typography variant="body1" color={'primary.contrastText'}>
+              {t('rules.text10')}
+            </Typography>
           </Box>
         </BoardCard>
         <BoardCard barSide="right">
@@ -324,7 +338,8 @@ const Payment: NextPage = () => {
               sx={{
                 listStyleType: 'counter-style',
                 color: 'text.secondary',
-                padding: 0
+                padding: 0,
+                width: '100%'
               }}
             >
               <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -335,7 +350,8 @@ const Payment: NextPage = () => {
                   sx={{
                     listStyleType: 'circle',
                     color: 'text.secondary',
-                    padding: '0'
+                    padding: '0',
+                    width: '100%'
                   }}
                 >
                   <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -363,7 +379,8 @@ const Payment: NextPage = () => {
                   sx={{
                     listStyleType: 'circle',
                     color: 'text.secondary',
-                    padding: 0
+                    padding: 0,
+                    width: '100%'
                   }}
                 >
                   <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -377,7 +394,8 @@ const Payment: NextPage = () => {
                       sx={{
                         listStyleType: 'square',
                         color: 'text.secondary',
-                        padding: 0
+                        padding: 0,
+                        width: '100%'
                       }}
                     >
                       <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
@@ -407,7 +425,8 @@ const Payment: NextPage = () => {
                   sx={{
                     listStyleType: 'circle',
                     color: 'text.secondary',
-                    padding: 0
+                    padding: 0,
+                    width: '100%'
                   }}
                 >
                   <Item sx={{ textAlign: 'justify', display: 'list-item' }}>

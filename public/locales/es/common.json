@@ -1,7 +1,7 @@
 {
   "pda2024": "PROGRAMADORES DE AMERICA 2024",
   "carousel": {
-    "equipos": "40 EQUIPOS OFICIALES",
+    "equipos": "42 EQUIPOS OFICIALES",
     "sede": "REUNIDOS EN UNA SEDE",
     "gdl": "CONOCE GUADALAJARA"
   },
@@ -25,9 +25,13 @@
     "schedule": "Agenda",
     "sponsors": "Patrocinadores",
     "rules": "Reglas de promoción",
-    "results": "Problemas y resultados"
+    "results": "Problemas y resultados",
+    "hotel": "Hotel",
+    "masters": "Primer Campeonato de Masters de Latinoamérica 2024",
+    "information": "Información importante para participantes"
   },
   "schedule": {
+    "message": "Día y Actividades por confirmar en la Agenda del Evento.",
     "dates": {
       "march14": "14 de marzo",
       "march15": "15 de marzo",
@@ -64,7 +68,9 @@
       "closingCeremony": "Ceremonia de clausura",
       "checkOut": "Check-Out",
       "leadersSymposium": "Simposio de lideres ICPC LATAM",
-      "checkOutLeaders": "Check-Out de los lideres ICPC LATAM"
+      "checkOutLeaders": "Check-Out de los lideres ICPC LATAM",
+      "excursiono": "Día opcional para paseos. Una vez que se confirmen las opciones, se publicará la información.",
+      "notincluded": "Actividad NO incluida en la agenda del evento."
     },
     "places": {
       "airport": "Aeropuerto Internacional de Guadalajara",
@@ -112,7 +118,18 @@
       "sponsorRecognitionAtBreakfastEachDay": "Reconocimiento como patrocinador del desayuno cada día",
       "2AccessesForExecutivesAndStaff": "2 accesos para ejecutivos y staff",
       "OpportunityToInteractWithParticipants": "Oportunidad de interactuar con participantes",
-      "1AccessForExecutivesAndStaff": "1 acceso para ejecutivos y staff"
+      "1AccessForExecutivesAndStaff": "1 acceso para ejecutivos y staff",
+      "logo1": "Logo en la manta",
+      "logo2": "Logo en el cuaderno",
+      "logo3": "Logo en la playera conmemorativa",
+      "beneficio1": "Presencia en el sitio web",
+      "beneficio2": "Menciones y agradecimientos en redes sociales",
+      "beneficio3": "Logotipo en materiales digitales e impresos",
+      "beneficio4": "Pancartas",
+      "beneficio5": "Branding (según el nivel de patrocinio)",
+      "beneficio6": "Derecho a incluir artículos promocionales en kit individual",
+      "beneficio7": "Personal con acceso tiene derecho a asistir a todas las actividades de la agenda, incluyendo las ceremonias de inauguración y clausura",
+      "beneficio8": "Beneficios para todos los niveles:"
     }
   },
   "contact": {
@@ -161,7 +178,7 @@
     "text7": "Sea “N_WF” el número de cupos para la Final Mundial asignados a América Latina. Considerando los resultados en el Campeonato:",
     "sec5list1": "El campeón de cada una de las seis regiones recibe una plaza.",
     "sec5list2": "Los cupos restantes se asignan al NW_F - 6 equipos con el mejor desempeño.",
-    "text8": "Solamente un equipo de una institución determinada puede avanzar a las Finales Mundiales. El pasaje aéreo al Final Mundial estará cubierto para los concursantes de los equipos ascendidos.",
+    "text8": "El pasaje aéreo al Final Mundial estará cubierto para los concursantes de los equipos ascendidos.",
     "sec6": "Campeón latinoamericano",
     "text9": "El equipo con mejor desempeño en el Campeonato será declarado Campeón Latinoamericano.",
     "sec7": "Casos imprevistos",
@@ -188,5 +205,63 @@
     "sec8list34": "fractions_R = 0",
     "sec8list4": "En caso de empate en 3.1, todas las regiones empatadas reciben un cupo, lo que da como resultado un número total de cupos mayor que N si eso ocurre en la última iteración de 3.",
     "sec8list5": "Las fracciones mayores que cero deben trasladarse al año siguiente."
+  },
+  "hotels": {
+    "intro": "La región ICPC México, organizadora del Primer Campeonato LATAM 'ICPC Programadores de América 2024', cubrirá el hospedaje de todos los participantes, durante los días confirmados en la agenda del evento.",
+    "benefits": {
+      "b1": "Desayuno americano tipo buffet.",
+      "b2": "Gimnasio",
+      "b3": "Estacionamiento techado",
+      "b4": "Llamadas locales y nacionales 01 800",
+      "b5": "Internet inalámbrico de alta velocidad en la habitación y áreas del hotel.",
+      "b6": "Estacionamiento en cortesía para huéspedes",
+      "b7": "Kit de café y té en cortesía en la habitación por noche.",
+      "b8": "1 botella de agua en cortesía en la habitación por noche.",
+      "b9": "Propina",
+      "b10": "Impuestos",
+      "b11": "Desayuno americano tipo buffet en el Holiday Inn Express ITESO",
+      "b12": "Cocina completa",
+      "b13": "Azotea ajardinada",
+      "b14": "Área de juegos",
+      "b15": "Cancha de usos múltiples",
+      "b16": "Área de estudio",
+      "b17": "Recepción y almacenamiento de paquetes",
+      "b18": "Estación de café u agua natural de 5:00 a 7:00 horas y de 20:00 a 24:00 horas fuera del elevador.",
+      "b19": "Acceso a las áreas recreativas en livUp, presentando el gafete del evento."
+    },
+    "time": {
+      "iteso1": "ITESO: Caminando, 5 minutos.",
+      "aero1": "Aeropuerto Guadalajara: Coche, 15 – 30 minutos",
+      "iteso2": "ITESO: Coche, 15 – 20 minutos.",
+      "aero2": "Aeropuerto Guadalajara: Coche, 30 – 35 minutos.",
+      "iteso3": "ITESO: Caminando, 15 minutos.",
+      "holiday": "Holiday Inn Express Guadalajara ITESO: Caminando, 8 - 10 minutos.",
+      "livup": "LIVUP: Residencia estudiantil: Caminando, 8 - 10 minutos"
+    },
+    "words": {
+      "includes": "Incluye:",
+      "time": "Tiempo para:"
+    }
+  },
+  "informatio": {
+    "sub": "Información Importante para Participantes",
+    "sec1": "Reglamento",
+    "sec2": "Visa",
+    "sec3": "Pasaporte",
+    "sec4": "Costos",
+    "linea1": "Programadores de América 2024 se alineará a las reglas de las Finales Mundiales.",
+    "linea2": "Esta será la primera referencia ante dudas relacionadas con la participación de equipos.",
+    "linea3": "En caso de que las dudas no sean resueltas, consulte a su Director de Región.",
+    "linea4": "Debido que no se ha podido utilizar la misma funcionalidad utilizada por los participantes en Finales Mundiales (icpc.global) para capturar la información del pasaporte de los participantes en Programadores de América 2024, hemos agregado una nueva pestaña en el perfil de los asistentes denominada “Extra-Field”.",
+    "linea5": "Capture en ese campo su número de pasaporte.",
+    "linea6": "En caso de que no tenga pasaporte, capture su número de identificación oficial.",
+    "linea7": "Para los siguientes integrantes de equipos clasificados:",
+    "linea8": "3 concursantes de cada equipo clasificado.",
+    "linea9": "1 entrenador principal de cada equipo clasificado.",
+    "linea10": "La participación en Programadores de América 2024 NO TENDRÁ COSTO, durante las fechas del evento, del 14 al 18 de marzo de 2024.",
+    "linea11": "Esto incluye el hospedaje, consumos y transportación local, así como el acceso a todas las actividades de la agenda y todo el material que se entregará a cada participante.",
+    "linea12": "Los participantes deberán cubrir los gastos de transportación aérea, terrestre y/o marítima, desde su lugar de origen hasta la ciudad de Guadalajara, México.",
+    "linea13": "No incluye la transportación hasta la sede (boleto de avión u otra forma de transportación), así como noches adicionales y actividades y consumos no incluidos en la agenda.",
+    "linea14": "El resto de los integrantes de equipos clasificados (coentrenadores, asistentes), deberán aportar una cuota de recuperación por su participación, la cual incluirá el mismo paquete considerado para concursantes y entrenadores. Este paquete será gestionado por los organizadores. En breve compartiremos el monto de la cuota de recuperación, así como el proceso para realizar el pago."
   }
 }

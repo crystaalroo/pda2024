@@ -6,6 +6,7 @@ class MyDocument extends Document {
   render() {
     const currentLocale =
       this.props.__NEXT_DATA__.locale ?? i18nextConfig.i18n.defaultLocale
+    console.log('currentLocale: ', currentLocale)
     return (
       <Html lang={currentLocale}>
         <Head>

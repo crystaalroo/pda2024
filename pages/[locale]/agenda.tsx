@@ -3,6 +3,9 @@ import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import TopBanner from '../../components/TopBanner'
 import AgendaTable, { RowData } from '../../components/Agenda'
+import AgendaTableOptional, {
+  RowData as RowDataO
+} from '../../components/AgendaOptional'
 import MainBoard from '../../components/MainBoard'
 import BoardCard from '../../components/BoardCard'
 import { Typography } from '@mui/material'
@@ -20,7 +23,8 @@ interface Props {
   agenda16: RowData[]
   agenda17: RowData[]
   agenda18: RowData[]
-  agenda19: RowData[]
+  agenda18a: RowDataO[]
+  agenda19: RowDataO[]
 }
 const Agenda: NextPage<Props> = ({
   agenda14,
@@ -28,6 +32,7 @@ const Agenda: NextPage<Props> = ({
   agenda16,
   agenda17,
   agenda18,
+  agenda18a,
   agenda19
 }) => {
   const { t } = useTranslation('common')
@@ -75,9 +80,14 @@ const Agenda: NextPage<Props> = ({
             width: '100%',
             overflow: 'scroll',
             alignItems: 'normal',
-            justifyContent: 'normal'
+            justifyContent: 'normal',
+            display: 'flex',
+            flexWrap: 'wrap'
           }}
         >
+          <Typography variant="body1" component="div" color={'text.secondary'}>
+            {t('schedule.message')}
+          </Typography>
           <AgendaTable Rows={agenda15} />
         </BoardCard>
         <BoardCard barSide="none" sx={{ padding: 0 }}>
@@ -138,10 +148,16 @@ const Agenda: NextPage<Props> = ({
             width: '100%',
             overflow: 'scroll',
             alignItems: 'normal',
-            justifyContent: 'normal'
+            justifyContent: 'normal',
+            display: 'flex',
+            flexWrap: 'wrap'
           }}
         >
+          <Typography variant="body1" component="div" color={'text.secondary'}>
+            {t('schedule.message')}
+          </Typography>
           <AgendaTable Rows={agenda18} />
+          <AgendaTableOptional Rows={agenda18a} />
         </BoardCard>
         <BoardCard barSide="none" sx={{ padding: 0 }}>
           <Typography
@@ -162,7 +178,17 @@ const Agenda: NextPage<Props> = ({
             justifyContent: 'normal'
           }}
         >
-          <AgendaTable Rows={agenda19} />
+          <AgendaTableOptional Rows={agenda19} />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="body1"
+            component="div"
+            align="center"
+            color="#F19A3E"
+          >
+            <b>{t('schedule.activities.notincluded')} </b>
+          </Typography>
         </BoardCard>
       </MainBoard>
       <Footer />
@@ -204,7 +230,8 @@ export const getStaticProps: GetStaticProps<Props> = async ctx => {
   let rows16: RowData[] = []
   let rows17: RowData[] = []
   let rows18: RowData[] = []
-  let rows19: RowData[] = []
+  let rows18a: RowDataO[] = []
+  let rows19: RowDataO[] = []
   await parseCSV('./public/agenda14.csv')
     .then((parsedRows: RowData[]) => {
       rows14 = parsedRows
@@ -245,8 +272,16 @@ export const getStaticProps: GetStaticProps<Props> = async ctx => {
     .catch((error: Error) => {
       console.error(error)
     })
+  await parseCSV('./public/agenda18a.csv')
+    .then((parsedRows: RowDataO[]) => {
+      rows18a = parsedRows
+      // console.log(rows17)
+    })
+    .catch((error: Error) => {
+      console.error(error)
+    })
   await parseCSV('./public/agenda19.csv')
-    .then((parsedRows: RowData[]) => {
+    .then((parsedRows: RowDataO[]) => {
       rows19 = parsedRows
       // console.log(rows17)
     })
@@ -262,6 +297,7 @@ export const getStaticProps: GetStaticProps<Props> = async ctx => {
       agenda16: rows16,
       agenda17: rows17,
       agenda18: rows18,
+      agenda18a: rows18a,
       agenda19: rows19
     }
   }

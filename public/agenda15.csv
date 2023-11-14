@@ -1,5 +1,6 @@
-﻿-,-,-,-,schedule.activities.breakfast,schedule.places.hotels,schedule.attendees.all,-
+﻿06:30,08:30,12:30,14:40,schedule.activities.breakfast,schedule.places.hotels,schedule.attendees.all,-
 -,-,-,-,schedule.activities.excursion,schedule.places.pending,schedule.attendees.all,-
--,-,-,-,schedule.activities.lunch,schedule.places.pending,schedule.attendees.all,-
--,-,-,-,schedule.activities.sponsorsActivities,schedule.places.pedroArrupeAuditoriumEsplanade,schedule.attendees.all,-
--,-,-,-,schedule.activities.dinner,schedule.places.WNorthGardenITESO,schedule.attendees.all,-
+13:00,15:00,19:00,21:00,schedule.activities.lunch,schedule.places.pending,schedule.attendees.all,-
+15:00,20:00,21:00,03:00 (+1),schedule.activities.sponsorsActivities,schedule.places.pedroArrupeAuditoriumEsplanade,schedule.attendees.all,-
+-,-,-,-,schedule.activities.leadersSymposium,schedule.places.pending,schedule.attendees.all, -
+20:00,22:00,02:00 (+1),04:00(+1),schedule.activities.dinner,schedule.places.WNorthGardenITESO,schedule.attendees.all,-

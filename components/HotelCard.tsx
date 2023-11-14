@@ -2,23 +2,14 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { List, ListItem, SxProps, Theme, Button } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
 export interface Props {
   name: string
   image: string
   benefits: string[]
   hotelLink: string
-  dprice: string
-  tprice: string
-  cprice: string
   time: string[]
-  reservationNumber?: string
-  optionalTitle: string
-  contactInfo: string[]
-  reservationLink?: string
-  evento: string
-  wid: boolean
-  cuadrup: string[]
 }
 
 interface Props1 {
@@ -45,18 +36,9 @@ const HotelCard: React.FC<Props> = ({
   image,
   benefits,
   hotelLink,
-  dprice,
-  tprice,
-  cprice,
-  time,
-  contactInfo,
-  reservationNumber,
-  optionalTitle,
-  reservationLink,
-  wid,
-  evento,
-  cuadrup
+  time
 }) => {
+  const { t } = useTranslation('common')
   return (
     <Box
       sx={{
@@ -100,41 +82,10 @@ const HotelCard: React.FC<Props> = ({
           color: 'text.secondary'
         }}
       >
-        <Item>Clave del Evento: {evento}</Item>
-        {wid && <Item>Evento: Concurso Regional 2022 ICPC México</Item>}
         <Item>
           <Button variant="outlined" href={hotelLink} color="info">
             <Typography sx={{ color: 'text.secondary' }}>Hotel info</Typography>
           </Button>
-        </Item>
-        <Item>
-          <List
-            sx={{
-              listStyleType: 'disc',
-              color: 'text.secondary',
-              padding: '3% 0 0 0'
-            }}
-          >
-            Precio Convenio ITESO + Grupo ITO
-            <Item key="okd" sx={{ display: 'list-item' }}>
-              Habitación Sencilla o Doble: <strong>{dprice} </strong>
-            </Item>
-            <Item key="okt" sx={{ display: 'list-item' }}>
-              Habitación Triple: <strong>{tprice} </strong>
-            </Item>
-            <Item key="okc" sx={{ display: 'list-item' }}>
-              Habitación Cuádruple: <strong>{cprice} </strong>
-              <List sx={{ listStyleType: 'square' }}>
-                {cuadrup.map(cua => {
-                  return (
-                    <Item key={cua} sx={{ display: 'list-item' }}>
-                      {cua}
-                    </Item>
-                  )
-                })}
-              </List>
-            </Item>
-          </List>
         </Item>
         <Item>
           <List
@@ -145,11 +96,11 @@ const HotelCard: React.FC<Props> = ({
               width: '100%'
             }}
           >
-            Incluye:
+            {t('hotels.words.includes')}
             {benefits.map(ben => {
               return (
                 <Item key={ben} sx={{ display: 'list-item' }}>
-                  {ben}
+                  {t(ben)}
                 </Item>
               )
             })}
@@ -164,56 +115,17 @@ const HotelCard: React.FC<Props> = ({
               padding: '3% 0 0 0'
             }}
           >
-            Tiempo de traslado
+            {t('hotels.words.time')}
             {time.map(ti => {
               return (
                 <Item key={ti} sx={{ display: 'list-item' }}>
-                  {ti}
+                  {t(ti)}
                 </Item>
               )
             })}
           </List>
         </Item>
-        <Item>
-          <List
-            sx={{
-              listStyleType: 'disc',
-              padding: '3% 0 0 0',
-              color: 'text.secondary',
-              width: '100%'
-            }}
-          >
-            {optionalTitle}
-            {contactInfo.map(cf => {
-              return (
-                <Item key={cf} sx={{ display: 'list-item' }}>
-                  {cf}
-                </Item>
-              )
-            })}
-          </List>
-        </Item>
-        {!wid && (
-          <Item>
-            <List
-              sx={{
-                listStyleType: 'disc',
-                color: 'text.secondary',
-                padding: '3% 0 0 0',
-                width: '100%'
-              }}
-            >
-              Reservación
-              <Item sx={{ display: 'list-item' }}>{reservationNumber}</Item>
-            </List>
-          </Item>
-        )}
       </List>
-      {reservationLink !== undefined && (
-        <Button variant="outlined" href={reservationLink} color="info">
-          <Typography sx={{ color: 'text.secondary' }}>Reserva aquí</Typography>
-        </Button>
-      )}
     </Box>
   )
 }

@@ -20,9 +20,10 @@ const titles = [
   'schedule.tables.titles.attendees',
   'schedule.tables.titles.sponsoredby'
 ]
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    // backgroundColor: 'primary.main',
+    backgroundColor: 'primary.main',
     color: theme.palette.common.white
   }
 }))
@@ -50,12 +51,15 @@ export interface Props {
   Rows: RowData[]
 }
 
-export const AgendaTable: React.FC<Props> = ({ Rows }) => {
+export const AgendaTableOptional: React.FC<Props> = ({ Rows }) => {
   const { t } = useTranslation('common')
   return (
-    <Box width={'100%'}>
+    <Box width={'100%'} sx={{ paddingTop: '1%' }}>
       <Paper sx={{ width: '100%', minWidth: '900px' }}>
-        <Table aria-label="customized table">
+        <Table
+          aria-label="customized table"
+          sx={{ backgroundColor: '#F19A3E' }}
+        >
           <TableHead>
             <TableRow>
               {titles.map(title => (
@@ -104,4 +108,4 @@ export const AgendaTable: React.FC<Props> = ({ Rows }) => {
   )
 }
 
-export default AgendaTable
+export default AgendaTableOptional
